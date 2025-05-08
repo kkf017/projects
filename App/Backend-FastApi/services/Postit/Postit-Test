@@ -1,0 +1,25 @@
+Case Test : Postit service.
+
+
+# Test : Create Postit
+curl -X POST -H "Content-Type: application/json" -d '{"uid": "", "title": "", "time": "", "memo": "", "img": ""}' http://127.0.0.1:8000/new
+
+
+
+# Test : Get a Postit
+curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/postit?uid=""&iid=""
+
+# Test : Get all Postits (for a User)
+curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/postits?uid=""
+
+
+# Test : Remove one Postit
+curl -X DELETE 'http://127.0.0.1:8000/close/postit?uid=""&iid=""
+
+# Test : Remove all Postits (for a User)
+curl -X DELETE http://127.0.0.1:8000/close/postits?uid=""
+
+
+
+
+

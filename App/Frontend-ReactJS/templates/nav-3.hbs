@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+
+    <!--- Itim, Exo, Concert+One, Neucha, Chewy --->
+
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Exo", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  
+  .w3-sidebar {width: 120px;background: #222;}
+  #main {margin-left: 120px}
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  
+</style>
+</head>
+
+
+
+<body class="w3-light-grey">
+
+   <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white">
+      <p></p>
+
+        <img src="https://img.freepik.com/premium-vector/mascot-illustration-sticky-note-with-laptop_152558-74504.jpg" style="width:85%">
+
+      <a href="/home/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="/new/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-pencil w3-xxlarge"></i>
+        <p>New</p>
+      </a>
+      <a href="/about/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a href="/" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-key w3-xxlarge"></i>
+        <p>Logout</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3--light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="/home/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="/new/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">NEW</a>
+        <a href="/about/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="/" class="w3-bar-item w3-button" style="width:25% !important">LOGOUT</a>
+      </div>
+    </div>
+    <!-- End Icon Bar (Sidebar - hidden on small screens) -->
+
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+          
+        <h1> <strong>Post-IT </strong></h1>
+
+       <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64">
+ 
+          <div class="w3-row  w3-section"> 
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                 
+                  <div class="w3-threequarter">
+                    <input class="w3-input w3-border" type="text" placeholder="Title" required name="Title" id="Title">
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="date" class="w3-white" id="date" name="date" style="outline:0;height:40px;width:210px">	    
+                  </div>
+
+                </div>
+                
+                <input class="w3-input w3-border" type="text" placeholder="Image (url)" required name="Image" id="Img"><p></p> 
+                <input class="w3-input w3-border w3-left-align" style="height:450px" type="text" placeholder="Memo" required name="Memo" id="Memo"><p></p>
+
+                <p align="center"><button onclick="PostIT()" class="w3-button w3-lime"><i class="fa fa-plus w3-margin-right"></i>Save it !</button></p>
+           
+          </div>
+        </div>
+        <!-- End Container (Contact Section) -->   
+
+     </div>
+    <!-- End Page Content -->     
+
+    </div>
+
+    <!--- Footer --->
+    <footer class="">
+        <div class="w3-center w3-padding-24">Powered by <a href="https://github.com/kkf017" target="_blank" class="w3-hover-opacity">@me</a></div>
+    </footer>
+    <!--- End Footer --->
+
+
+</body>
+
+<script>
+    function PostIT(){
+    	// get ui in url (params)
+    	
+        let title = document.getElementById("Title").value;
+        let date = document.getElementById("date").value;
+        let img = document.getElementById("Img").value;
+        let memo = document.getElementById("Memo").value;
+
+        // send request
+
+        console.log("Create new Post-IT\nTitle: " + title + "\ntime: " + date + "\nimage: " + img + "\nmemo: " + memo);
+    }
+</script>
+
+
+</html>

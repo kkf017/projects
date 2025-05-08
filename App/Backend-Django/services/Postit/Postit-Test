@@ -1,0 +1,43 @@
+Case Test : Postit service.
+
+
+# Test : Create Postit
+curl -X POST -H "Content-Type: application/json" -d '{"uid": "", "title": "", "time": "", "memo": "", "img": ""}' http://127.0.0.1:8000/new
+
+
+
+# Test : Get a Postit
+curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/postit?uid=""&iid=""
+
+# Test : Get all Postits (for a User)
+curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/postits?uid=""
+
+
+# Test : Remove one Postit
+curl -X DELETE 'http://127.0.0.1:8000/close/postit?uid=""&iid=""
+
+# Test : Remove all Postits (for a User)
+curl -X DELETE http://127.0.0.1:8000/close/postits?uid=""
+
+
+
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"uid": "621e0d8d100f0c51f3152f843a3b72069e0e7a86", "title": "Gingerbread recipie", "time": "2024-12-16", "memo": "This is my gingerbread recipie.", "img": "url-img"}' http://127.0.0.1:8000/new
+
+curl -X POST -H "Content-Type: application/json" -d '{"uid": "621e0d8d100f0c51f3152f843a3b72069e0e7a86", "title": "Candy Cane recipie", "time": "2024-12-16", "memo": "This is my candy cane recipie.", "img": "url-img"}' http://127.0.0.1:8000/new
+
+
+
+
+curl -X DELETE 'http://127.0.0.1:8000/close/postit?uid=621e0d8d100f0c51f3152f843a3b72069e0e7a86&iid=98aea12073fc8dadd949bc6153b424d5ef95e34b'
+
+
+curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/postit?uid=621e0d8d100f0c51f3152f843a3b72069e0e7a86&iid=98aea12073fc8dadd949bc6153b424d5ef95e34b
+
+
+curl -X DELETE http://127.0.0.1:8000/close/postits?uid=621e0d8d100f0c51f3152f843a3b72069e0e7a86
+
+
+
+

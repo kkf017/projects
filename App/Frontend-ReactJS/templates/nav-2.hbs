@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+
+    <!--- Itim, Exo, Concert+One, Neucha, Chewy --->
+
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Exo", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  
+  .w3-sidebar {width: 120px;background: #222;}
+  #main {margin-left: 120px}
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  
+</style>
+</head>
+
+
+
+<body class="w3-light-grey">
+
+   <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white">
+      <p></p>
+
+        <img src="https://img.freepik.com/premium-vector/mascot-illustration-sticky-note-with-laptop_152558-74504.jpg" style="width:85%">
+
+      <a href="/home/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="/new/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-pencil w3-xxlarge"></i>
+        <p>New</p>
+      </a>
+      <a href="/about/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a href="/" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-key w3-xxlarge"></i>
+        <p>Logout</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3--light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="/home/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="/new/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">NEW</a>
+        <a href="/about/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="/" class="w3-bar-item w3-button" style="width:25% !important">LOGOUT</a>
+      </div>
+    </div>
+    <!-- End Icon Bar (Sidebar - hidden on small screens) -->
+
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+          
+        <h1> <strong>Post-IT </strong></h1>
+        
+         <p class="w3-text-light-grey" id="user-id"> {{uid}} </p>
+          <p class="w3-text-light-grey" id="postit-id"> {{iid}} </p>
+
+
+          <!-- Content -->
+          <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+          
+	    <div id="display-postits"> </div>
+              
+          </div>
+          <!-- End Content -->
+
+
+     </div>
+    <!-- End Page Content -->     
+
+    </div>
+
+    <!--- Footer --->
+    <footer class="">
+        <div class="w3-center w3-padding-24">Powered by <a href="https://github.com/kkf017" target="_blank" class="w3-hover-opacity">@me</a></div>
+    </footer>
+    <!--- End Footer --->
+
+
+</body>
+
+<script>
+	const postit = {"uid":"621e0d8d100f0c51f3152f843a3b72069e0e7a86","iid":"234c6d74f3ee6ea4a2f031ae72b6a013865cfe5b","title":"Gingerbread Recipie","time":"2024-12-12","memo":"300 g de farine \\n125 g de beurre mou \\n90 g de cassonade \\n50 g de miel ou mélasse \\n1 oeuf \\n1 cuil. à café de bicarbonate de soude ou levure chimique \\n1 cuil. à soupe de gingembre en poudre \\n2 cuil. à café de cannelle en poudre \\n1 cuil. à café de 4 épices \\n2 pincées de sel","img":"https://www.google.com/imgres?q=cute%20gingerbread&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1269926813%2Fvector%2Fchristmas-greeting-card-with-cute-gingerbread-houses.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DFyeliCrfTy7NLZuYaOrY2UQ5PL8o0R5_9njEehnh210%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fgingerbread-village&docid=AZClOEhfz1AipM&tbnid=E1nOh5dPCDpDqM&vet=12ahUKEwjthujK8JqKAxVwLPsDHeEJGFo4KBAzegQIZxAA..i&w=612&h=334&hcb=2&ved=2ahUKEwjthujK8JqKAxVwLPsDHeEJGFo4KBAzegQIZxAA"}
+	
+	window.onload = () => { displayPostit() };
+	
+	function displayPostit(){
+		// send request to get Postit with uid, iid
+		console.log("From display, " + document.getElementById('user-id').innerHTML + ", " + document.getElementById('postit-id').innerHTML);
+		
+		// diplay Note
+		let div = document.getElementById('display-postits');
+		div.innerHTML =  `<h2 class="w3-wide">${postit.title}</h2>
+				    <p class="w3-opacity"><i>${postit.time}</i></p>
+				    <p class="w3-justify">${postit.memo}</p>
+				    <div class="w3-row w3-padding-32">
+
+					<img src=${postit.img} style="width:60%">
+				      <!--<div class="w3-third">
+					<p>Name</p>
+					<img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+				      </div>--> `;
+	}
+
+
+</script>
+
+
+</html>

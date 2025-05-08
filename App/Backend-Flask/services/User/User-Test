@@ -1,0 +1,34 @@
+Case Test : User service
+
+"user.test.01@gmail.com", "Login-Test-x01"
+
+
+# Test : get user
+curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/user?uid=""
+
+# Test : Create User (signup)
+curl -X POST -H "Content-Type: application/json" -d '{"email":"", "password": ""}' http://127.0.0.1:8000/signup/
+
+
+# Test : Login
+curl -X POST -H "Content-Type: application/json" -d '{"email":"", "password": ""}' http://127.0.0.1:8000/signin/
+
+
+# Test : Update password
+curl -X POST -H "Content-Type: application/json" -d '{"email":"", "password": "", "value": ""}' http://127.0.0.1:8000/update/password
+
+
+
+# Test : Update email
+curl -X POST -H "Content-Type: application/json" -d '{"uid":"", "value":""}' http://127.0.0.1:8000/update/email
+
+
+
+# Test : Close Account
+curl -X DELETE -H "Content-Type: application/json" http://127.0.0.1:8000/close?uid=""
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+
+    <!--- Itim, Exo, Concert+One, Neucha, Chewy --->
+
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Exo", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  
+  .w3-sidebar {width: 120px;background: #222;}
+  #main {margin-left: 120px}
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  
+</style>
+</head>
+
+
+
+<body class="w3-light-grey">
+
+   <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-white">
+      <p></p>
+
+        <img src="https://img.freepik.com/premium-vector/mascot-illustration-sticky-note-with-laptop_152558-74504.jpg" style="width:85%">
+
+      <a href="/home/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="/new/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-pencil w3-xxlarge"></i>
+        <p>New</p>
+      </a>
+      <a href="/about/{{uid}}" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a href="/" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-key w3-xxlarge"></i>
+        <p>Logout</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3--light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="/home/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="/new/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">NEW</a>
+        <a href="/about/{{uid}}" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="/" class="w3-bar-item w3-button" style="width:25% !important">LOGOUT</a>
+      </div>
+    </div>
+    <!-- End Icon Bar (Sidebar - hidden on small screens) -->
+
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+          
+        <h1> <strong>Post-IT </strong></h1> <p class="w3-text-light-grey" id="user-id"> {{uid}} </p>
+
+        <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64">
+ 
+          <div class="w3-row  w3-section"> 
+                
+              <div class="w3-container w3-padding-64 w3-white" style="height:235px">
+                <div class="w3-quarter">
+                    <span class="" type="text"> Username </span>
+                  </div>
+                  <div class="w3-threequarter">
+                    <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" id="Email">
+                  </div>
+                    <p align="center" class="w3-padding-64"><button onclick="UpdateEmail()" class="w3-button w3-lime"><i class="fa fa-plus w3-margin-right"></i>Change it !</button></p>
+               </div>
+
+            <p class="w3-padding-16"></p>
+
+             <div class="w3-container w3-padding-64 w3-white" style="height:235px">
+                <div class="w3-quarter">
+                    <span class="" type="text"> Password </span>
+                  </div>
+                  <div class="w3-threequarter">
+                    <input class="w3-input w3-border" type="password" placeholder="Password" required name="Password" id="Password">
+                    <input type="checkbox" onclick="SeeIt()">Show Password <p></p>
+                  </div>
+                    <p align="center" class="w3-padding-64"><button onclick="UpdatePassword()" class="w3-button w3-lime"><i class="fa fa-plus w3-margin-right"></i>Change it !</button></p>
+               </div>
+           
+          </div>
+
+            <p align="center" class="w3-padding-64"><button onclick="SuppressAccount()" class="w3-button w3-deep-orange"><i class="fa fa-minus w3-margin-right"></i>Suppress Account</button></p>
+        </div>
+        <!-- End Container (Contact Section) --> 
+
+       
+     </div>
+    <!-- End Page Content -->     
+    </div>
+
+
+    <!--- Footer --->
+    <footer class="">
+        <div class="w3-center w3-padding-24">Powered by <a href="https://github.com/kkf017" target="_blank" class="w3-hover-opacity">@me</a></div>
+    </footer>
+    <!--- End Footer --->
+
+
+</body>
+
+<script>
+
+    function UpdateEmail(){
+        let email = document.getElementById("Email").value;
+        
+        // request to update email 
+        console.log("From UpdateEmail, " + document.getElementById('user-id').innerHTML + ", " + email);
+        // 621e0d8d100f0c51f3152f843a3b72069e0e7a86 , newEmail.017@yahoo.com
+    }
+    
+    function UpdatePassword(){
+        let password = document.getElementById("Password").value;
+        
+        // request to update password 
+        console.log("From UpdatePassword, " + document.getElementById('user-id').innerHTML+ ", " + password);
+        //From UpdatePassword,  621e0d8d100f0c51f3152f843a3b72069e0e7a86 , newPassword-01
+    }
+
+    function SuppressAccount(){
+    
+    	// request to suppress account 
+        console.log("From SuppressAccount, " + document.getElementById('user-id').innerHTML);
+        //From SuppressAccount,  621e0d8d100f0c51f3152f843a3b72069e0e7a86
+    }
+</script>
+
+
+<script>
+    function SeeIt() {
+      var x = document.getElementById("Password");
+      if (x.type === "password"){
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+</script>
+
+</html>
