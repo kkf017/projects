@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--------------------------------------------------------------------------------------------->
+<head>
+	<title>OBOTR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	
+	
+	<!-- Wittgenstein, Bitter, Satisfy, Merienda -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wittgenstein">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Wittgenstein", sans-serif}
+	.w3-bar,h1,button {font-family: "Merienda", sans-serif}
+	.fa-anchor,.fa-coffee {font-size:200px}
+	
+	
+	header{
+		  background-image: url('../static/img/books-on-grass-2.jpg');
+		   background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover; 
+		}
+	</style>
+</head>
+<!--------------------------------------------------------------------------------------------->
+
+
+
+<body>
+
+<!--------------------------------------------------------------------------------------------->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-light-grey w3-card w3-left-align w3-medium">
+    
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-purple w3-medium" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+     <a href="/search?uid={{uid}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-pink w3-hover-white" title="home"><i class="fa fa-home"></i></a>
+  
+  <a href="/acc?uid={{uid}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-globe"></i></a>
+  
+   <a href="/contact?uid={{uid}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-envelope"></i></a>
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-purple">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+    
+    
+   <a href="/logout/" class="w3-bar-item w3-button w3-hide-small w3-right  w3-hover-white w3-text-black"><i class=""></i>Logout</b></a>
+
+    <!--<a href="/contact?uid={{uid}}" class="w3-bar-item w3-button w3-hide-small w3-right  w3-hover-white w3-text-black"><i class=""></i>Contact</b></a>-->
+  </div>
+  
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/search?uid={{uid}}" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="/acc?uid={{uid}}" class="w3-bar-item w3-button w3-padding-large">Account</a>
+    <a href="/contact?uid={{uid}}" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="/logout/" class="w3-bar-item w3-button w3-padding-large">Logout</a>
+  </div>
+</div>
+<!--------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------------------->
+	<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+	  <h1 class="w3-margin w3-jumbo">One Book On The Road</h1>
+	  <p class="w3-xlarge">Find the nearest book box !</p>
+	</header>
+<!--------------------------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------------------------------------->
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h2 class="w3-center">You want to participate ?</h2>
+  <p class="w3-center"><em>Don't hesitate to give the address of your <strong>book box</strong> with the following formular, or send an email at <strong><a class="w3-text-purple" href=mailto:“....@....com”>...@....com</a></strong>.</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+      <form action="/send/" enctype="multipart/form-data" method="post">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Address" required name="Address">
+        <p></p>
+        <input class="w3-input w3-border w3-left-align" style="height:250px" type="text" placeholder="Comment" required name="Comment">
+        <p align="center"><button class="w3-button w3-dark-grey w3-center w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND </button></p>
+      </form>
+   
+  </div>
+</div>
+
+
+<!-------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------------------->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+<!--------------------------------------------------------------------------------------------->
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,187 @@
+9 Place de la République 17290 Aigrefeuille-d'Aunis
+2 Route de Jonzac 17500 Allas-Champagne
+8 Rue des Sables 17540 Angliers
+2 Chemin des Marais 17690 Angoulins
+65bis Rue du Chay 17690 Angoulins
+4 Avenue Edmond Grasset 17690 Angoulins
+16 Rue des Albizzias 17690 Angoulins
+36bis Chemin des Russons 17690 Angoulins
+17 Rue du Patis 17520 Archiac
+1 Rue du Presbytere 17520 Arthenac
+49 Avenue de Saint-jean-d'Angély 17400 Asnières-la-Giraud
+29 Place Aristide Briand 17470 Aulnay
+82 Place des Grands Pres 17440 Aytré
+1 Place de la Mairie 17250 Beurlay
+2 Rue Principale 17400 Bignay
+4 Allee de la Mairie 17400 Bignay
+1 Place Henri Barbusse 17560 Bourcefranc-le-Chapus
+12b Rue de Betphage 17220 Bourgneuf
+Place de l'Eglise 17220 Bourgneuf
+2 Rue de Saintonge 17120 Boutenac-Touvent
+32 Rue du Centre 17920 Breuillet
+8 Avenue de Royan 17120 Brie-sous-Mortagne
+12 Rue de la Mairie 17270 Cercoux
+3 Rue de la Rochelle 17340 Châtelaillon-Plage
+7 D’730 le Grand Vrignac 17210 Chepniers
+3bis Rue de la Mairie 17470 Cherbonnières
+3 Allée des Bodins 17460 Chermignac
+1 Rue des Jardins 17290 Ciré-d'Aunis
+16 Rue du Moulin 17220 Clavette
+39 Rue de la Mairie 17330 Coivert
+2 Rue de Marans 17170 Courçon
+2 Allée des Soupirs 17120 Cozes
+14 Rue des Vieux Moulins 17170 Cram-Chaban
+31 Route du Gerzeau 17260 Cravans
+8 Rue de Saintonge 17350 Crazannes
+6 Rue de la Poste 17470 Dampierre-sur-Boutonne
+34 Rue du Général de Gaulle 17139 Dompierre-sur-Mer
+5 Rue de l'Eglise 17620 Échillais
+3 Rue des Coccinelles 17770 Écoyeux
+26 Avenue de la République 17137 Esnandes
+18bis Place Carnot 17450 Fouras
+2bis Avenue Philippe Jannet 17450 Fouras
+28 Rue du Général Bruncher 17450 Fouras
+6 Rue James Sclafer 17500 Jonzac
+28 Place du Chateau 17500 Jonzac
+2 Rive Gauche du Port 17600 L'Éguille
+4 Esplanade Charles de Gaulle 17137 L'Houmeau
+24 Rue de Saintonge 17160 La Brousse
+19 Rue de la République 17100 La Chapelle-des-Pots
+15 Impasse de la Grange 17670 La Couarde-sur-Mer
+27 Avenue du Mail 17670 La Couarde-sur-Mer
+8bis Ruelle des Ormes 17630 La Flotte
+27 Rue des Caillotières 17630 La Flotte
+12ter Rue de l’Eglise 17220 La Jarne
+4bis Rue de l'Alerte 17220 La Jarrie
+6 Rue de l'Alerte 17220 La Jarrie
+1 Route de Loulay 17330 La Jarrie-Audouin
+32 Rue du Cordouan 17000 La Rochelle
+3 Rue Bujaud 17000 La Rochelle
+110b Avenue du Lieutenant Col Bernier 17000 La Rochelle
+95 Rue du Velodrome 17000 La Rochelle
+29 Rue Pilatre de Rozier 17000 La Rochelle
+47 Avenue Gabrielle 17390 La Tremblade
+2 Rue de la République 17380 Landes
+17 Rue Louis Barthou 17580 Le Bois-Plage-en-Ré
+34 Rue Aristide Briand 17580 Le Bois-Plage-en-Ré
+15a Avenue de la Plage 17580 Le Bois-Plage-en-Ré
+1 Rue Benjamin Delessert 17480 Le Château-d'Oléron
+1 Lotissement du Bourg 17270 Le Fouilloux
+2 Rue de Saint Legier 17600 Le Gua
+14 Rue de l'Hôtel de Ville 17250 Les Essards
+1 Place des Gillardeaux 17100 Les Gonds
+1 Avenue d’Aunis 17570 Les Mathes
+25 Grande Rue 17380 Les Nouillers
+4 Rue du Grand Chapitre 17470 Loiré-sur-Nie
+15 Rue des Marronniers 17230 Longèves
+2 Rue de la Gare 17330 Loulay
+6bis Rue Poirier Chapelle 17430 Lussant
+29bis Rue Neuve 17230 Marans
+2 Chemin du Midi 17700 Marsais
+18bis Rue de l'Ancienne Poste 17137 Marsilly
+25 Rue de Saint Hérie 17160 Matha
+3a Rue des Champs de Foire 17160 Matha
+8 Rue du 4e Zouave 17600 Médis
+11 Rue du Fief des Sables 17132 Meschers-sur-Gironde
+44bis Avenue du Général de Gaulle 17780 Moëze
+1 Plaine des Sports 17270 Montguyon
+27bis Rue du Chateau d'Eau 17270 Montguyon
+4 Place Léon Robin 17220 Montroy
+13 Rue du Prieuré 17113 Mornac-sur-Seudre
+2 Rue du Marvoux 17113 Mornac-sur-Seudre
+4 Rue de la Mairie 17380 Nachamps
+4 Rue des Ecoles 17150 Nieul-le-Virouil
+11 Avenue du Tarnac 17150 Nieul-le-Virouil
+24 Avenue du Parc 17137 Nieul-sur-Mer
+3 Rue Léonce Vieljeux 17137 Nieul-sur-Mer
+2bis Place de l'Eglise 17540 Nuaillé-d'Aunis
+1 Route d’Aulnay 17470 Nuaillé-sur-Boutonne
+4 Rue de la Poste 17250 Plassay
+Rue du Château d'Eau 17800 Pons
+24a Rue des Lapidiales 17350 Port-d'Envaux
+Quai de Carénage 17350 Port-d'Envaux
+5 Rue Claude Bernard 17730 Port-des-Barques
+1bis Rue Albert Rambaud 17730 Port-des-Barques
+1 Rue de l'Ecole 17400 Poursay-Garnaud
+1 Impasse des Rossignols 17138 Puilboreau
+ZAC de Beaulieu 17138 Puilboreau
+22 Rue de Haute Saintonge 17500 Réaux sur Trèfle
+16 Place de la Mairie 17460 Rioux
+20 Impasse des Ecoles 17940 Rivedoux-Plage
+383 Rue de la Garenne 17940 Rivedoux-Plage
+125bis Rue Pierre Loti 17300 Rochefort
+Bassin Bougainville 17300 Rochefort
+67 Rue Jean Jaures 17300 Rochefort
+25 Rue de la Vacherie 17300 Rochefort
+1 Av Marie Francois Sadi Carnot 17300 Rochefort
+40bis Rue Jean Jaures 17300 Rochefort
+1 Rue de la Vieille Forme 17300 Rochefort
+21 Rue Andre Malraux 17300 Rochefort
+99 Avenue des Semis 17200 Royan
+66 Boulevard de la Marne 17200 Royan
+99 Boulevard de la Marne 17200 Royan
+35 Boulevard de Cordouan 17200 Royan
+75 Rue de la Mairie 17600 Sablonceaux
+16 Rue de la Seudre 17260 Saint-André-de-Lidon
+6 Chemin de l'Eglise 17220 Saint-Christophe
+5 Route de Fontenay le Comte 17170 Saint-Cyr-du-Doret
+16 Rue de la Libération 17650 Saint-Denis-d'Oléron
+54 Rue de l'Europe 17780 Saint-Froult
+2 Allée des Flots 17110 Saint-Georges-de-Didonne
+130 Boulevard de la Côte de Beauté 17110 Saint-Georges-de-Didonne
+37 Rue de Saujon 17110 Saint-Georges-de-Didonne
+121 Rue du General de Gaulle 17110 Saint-Georges-de-Didonne
+30 Avenue des Libellules 17110 Saint-Georges-de-Didonne
+73 Avenue Jean Jaurès 17110 Saint-Georges-de-Didonne
+53 Avenue Maréchal Juin 17110 Saint-Georges-de-Didonne
+19 Chemin du Fort de Suzac 17110 Saint-Georges-de-Didonne
+22 Rue du Parc 17810 Saint-Georges-des-Coteaux
+21a Avenue de l'Europe 17500 Saint-Germain-de-Lusignan
+Bourg de Saint Germain 17500 Saint-Germain-de-Vibrac
+1 Rue de la Planche à Roy 17240 Saint-Germain-du-Seudre
+24 Avenue de Saint Jean d’Angely 17770 Saint-Hilaire-de-Villefranche
+6 Place Eugène Laugraud 17430 Saint-Hippolyte
+37 Rue de Verdun 17400 Saint-Jean-d'Angély
+28 Rue Alsace Lorraine 17400 Saint-Jean-d'Angély
+25 Rue des Ecoles 17400 Saint-Julien-de-l'Escap
+3 Route de Poitiers 17400 Saint-Julien-de-l'Escap
+171 Route Impériale 17450 Saint-Laurent-de-la-Prée
+116 Rue de l'Intendance 17450 Saint-Laurent-de-la-Prée
+5 Rue du Bourg 17780 Saint-Nazaire-sur-Charente
+44 Rue Marie Louise Cardin 17230 Saint-Ouen-d'Aunis
+5t Rue du Colonel Cornubert 17420 Saint-Palais-sur-Mer
+4 Rue de l’Ocean 17420 Saint-Palais-sur-Mer
+2ter Avenue de Courlay 17420 Saint-Palais-sur-Mer
+22 Rue du Port 17310 Saint-Pierre-d'Oléron
+17 Rue de la République 17310 Saint-Pierre-d'Oléron
+1 Rue de la Vauzelle 17250 Saint-Porchaire
+6 Route de Bénigousse 17260 Saint-Simon-de-Pellouaille
+11 Place Saint-saturnin 17600 Saint-Sornin
+2bis Rue de Dompierre 17138 Saint-Xandre
+2 Rue de Marans 17138 Saint-Xandre
+3 Rue de Saint Sauveur 17740 Sainte-Marie-de-Ré
+5 Rue du Stade 17740 Sainte-Marie-de-Ré
+28 Rue du Périgord 17220 Sainte-Soulle
+3 Rue René Cassin 17100 Saintes
+69 Grande Rue de Grolleau 17220 Salles-sur-Mer
+4 Place de l'Eglise 17220 Salles-sur-Mer
+46 Rue Carnot 17600 Saujon
+25 Quai Jules Dufaure 17600 Saujon
+9bis ZAC du Pre Chardon 17120 Semussac
+12 Rue des Vallons 17160 Sonnac
+4 Rue de l'Ancienne École 17130 Souméras
+24 Place de l’Europe 17700 Surgères
+13 Rue du Centre 17160 Thors
+17 Place de l'Hotel de Ville 17380 Tonnay-Boutonne
+42 Rue de Fondseche 17430 Tonnay-Charente
+21 Avenue de la Jéhannière 17430 Tonnay-Charente
+11 Rue du Vieux Puits 17430 Tonnay-Charente
+7bis Rue du Marais 17430 Tonnay-Charente
+48 Avenue de la République 17250 Trizay
+12 Place du Général de Gaulle 17250 Trizay
+3 Rue du Logis 17640 Vaux-sur-Mer
+Fief de Tout Y Faut Nord 17330 Vergné
+16 Rue des Marchands 17540 Vérines
+1bis Rue de la Verrerie 17540 Vérines
+1 Place General de Gaulle 17330 Villeneuve-la-Comtesse
+40 Avenue André Dulin 17340 Yves

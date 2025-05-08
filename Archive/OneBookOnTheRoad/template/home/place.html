@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--------------------------------------------------------------------------------------------->
+<head>
+	<title>OBOTR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	
+	
+	<!-- Wittgenstein, Bitter, Satisfy, Merienda -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wittgenstein">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Wittgenstein", sans-serif}
+	.w3-bar,h1,button {font-family: "Merienda", sans-serif}
+	.fa-anchor,.fa-coffee {font-size:200px}
+	
+	
+	header{
+		  background-image: url('../static/img/books-on-grass-2.jpg');
+		   background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover; /*100% 100%;
+		}
+	</style>
+</head>
+<!--------------------------------------------------------------------------------------------->
+
+
+<body>
+
+<!--------------------------------------------------------------------------------------------->
+<div class="w3-top">
+  <div class="w3-light-grey w3-card w3-left-align w3-medium">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-purple w3-medium" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <a href="/" class="fa fa-home w3-bar-item w3-button w3-padding-large w3-pink"></a>
+
+    <a href="/login/" class="w3-bar-item w3-button w3-hide-small w3-right w3-text-black"><i class=""></i>Login</b></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+  </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------->
+<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">One Book On The Road</h1>
+  <p class="w3-xlarge">Find the nearest book box !</p>
+  
+  <form action="/location/" enctype="multipart/form-data" method="post">
+      <div class="w3-row w3-section">
+            <div class="w3-rest" align = "center">
+                <input class="w3-border" name="search-addr" type="text" id="search-addr" placeholder="Address" style="height:35px;width: 425px">
+           
+            
+             <select class="w3-select w3-border w3-white" name="search-radius" id="search-radius" style="padding:128px height:25px;width: 65px">
+	    <option value="10">10 km</option>
+	    <option value="20">20 km</option>
+	    <option value="30">30 km</option>
+	    <option value="30">50 km</option>
+	  </select>
+            </div>
+        </div>
+  
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Search</button>
+  
+  </form>
+</header>
+<!--------------------------------------------------------------------------------------------->
+
+
+
+<!---------------------------------------------------------------------------------------->
+<div class="w3-content" style="max-width:1600px">
+  <div class="w3-row w3-padding ">
+    <div class="w3-col l8 s12">
+      <div id =”my-map” class="w3-container w3-white w3-margin w3-padding-large"></div>
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+      		<!--[if !IE]> <-->
+		<object type="text/html" data="../static/maps/{{value.result.Hash}}.html" width="100%" height="525"> <!-- width="965" height="525">-->
+		<p>backup content</p>
+		</object>
+		<!--> <![endif]-->
+      </div>
+      <hr>
+      <hr>
+    </div> 
+
+ 
+   <div class="w3-col l4">
+      <div class="w3-white w3-margin">	
+      	<p></p>
+        <div class="w3-container w3-black">
+          <h3 class="w3-center">THE PLACE</h3>
+          <h5 class="w3-center w3-opacity">{{value.result.Address}}<span class="w3-opacity"></span></h5>
+          <p></p>
+          <div class="w3-justify">
+          <p></p>
+          <!--<form action="unknown?id={{value.result.Hash}}" enctype="multipart/form-data" method="post">-->
+          <form action="/log" enctype="multipart/form-data" method="post">
+          	<p class="w3-center"><button class="w3-button w3-white w3-border"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+		  <!--<p class="w3-right"><button class="w3-button w3-dark-grey" id="myBtn"><b>See on map ! >></b> <span class="w3-tag w3-white">1</span></button></p>
+		  <p class="w3-clear"></p>-->
+	</form>
+       
+        </div>
+        </div>
+      </div>
+      <hr>
+   
+   
+       <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Exchange</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>You want to participate and share your books with others ?</p>
+          <form action="/log/" enctype="multipart/form-data" method="post">
+          <p class="w3-center"><button class="w3-button w3-border w3-red"><b>Go to Trade place ! >></b></button></p>
+          </form>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+
+
+</div>
+
+
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i  class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Subscribe</button>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+<!--------------------------------------------------------------------------------------------->
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+""" Pyenv (documentation) """
+# https://github.com/pyenv/pyenv?tab=readme-ov-file#a-getting-pyenv
+# https://blog.stephane-robert.info/docs/developper/programmation/python/pyenv/
+# https://blog.teclado.com/how-to-use-pyenv-manage-python-versions/
+
+To check python versions and virtualenv installed:
+	pyenv versions
+	
+Install a Python version:
+	pyenv install [3.11.0]
+	
+Create a virtualenv:
+	pyenv virtualenv [3.11.0] [name-of-my-venv]
+
+Use a virtualenv:
+	pyenv activate [name-of-my-venv]
+	pyenv deactivate
+	
+

@@ -1,0 +1,30 @@
+git clone ssh://git@github.com/<user>/<repository name>.git
+arp -a 
+scapy
+iptable
+bettercap
+
+
+Render - (account)
+
+https://medium.com/@wrefordmessi/fastapi-deployment-on-ubuntu-server-f4f94b9f8cc8
+https://saurabh-nakoti.medium.com/deploying-fastapi-application-on-a-linux-server-with-gunicorn-and-nginx-f2d9bdb7a262
+https://github.com/hardope/deploy_fastapi_on_ubuntu_server
+
+
+ubuntu deploy Fast Api app
+
+https://github.com/hardope/deploy_fastapi_on_ubuntu_server
+https://medium.com/@wrefordmessi/fastapi-deployment-on-ubuntu-server-f4f94b9f8cc8
+https://docs.vultr.com/how-to-deploy-fastapi-applications-with-gunicorn-and-nginx-on-ubuntu-20-04
+
+
+https://stackoverflow.com/questions/72430795/use-a-domain-like-name-to-access-a-test-site-instead-of-an-ip-address
+https://stackoverflow.com/questions/21587452/mapping-local-ip-addressport-to-a-host-name-using-nginx-but-no-mapping-is-done
+
+
+
+https://blog.back4app.com/deploy-fastapi/
+ https://medium.com/@anser.developer/deploying-your-node-js-app-on-back4app-like-a-pro-6007c58f711c
+ https://dev.to/koyeb/deploy-a-node-express-application-to-production-462
+ 

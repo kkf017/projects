@@ -1,0 +1,111 @@
+4 Rue des Bruyères 56350 Allaire
+34 Rue Saint-martin 56610 Arradon
+18 Allee Prad Er Lann 56610 Arradon
+2027 PA Zone Portuaire 56190 Arzal
+5 Rue du Port Douar 56640 Arzon
+17 Rue du General de Gaulle 56640 Arzon
+38 Rue du Lait 56400 Auray
+25 Quai Franklin 56400 Auray
+32 Rue du Colonel Andre Faure 56400 Auray
+2 Place du Marhalle 56870 Baden
+6 Allée de l'Embarcadère 56870 Baden
+52 Rue Mane Er Groez 56870 Baden
+270 Rue Claude Monet 56360 Bangor
+1 Cour communale 56350 Béganne
+5 Place de la Mairie 56240 Berné
+10 Place de la Chouannerie 56500 Bignan
+Rue des Terres Neuvas 56190 Billiers
+19 Rue des Tilleuls 56140 Bohal
+2 Place de l’Eglise 56390 Brandivy
+2 Rue Park ar Fetan 56400 Brech
+10 Rue Georges Cadoudal 56400 Brech
+15 Rue de l’Hermine 56400 Brech
+28 Avenue de la Poste 56340 Carnac
+1 Rue du Couvent 56480 Cléguérec
+Prat Coh 56950 Crach
+Rue Espace du Loch 56750 Damgan
+3 Allée du Lain 56530 Gestel
+Grande Rue 56390 Grand-Champ
+2a Rue du Centre 56590 Groix
+5604 Lieu-dit Kermunition 56590 Groix
+1 Rue du Pont Creux 56920 Gueltas
+25 Rue Emile Mazé 56160 Guémené-sur-Scorff
+2 Zone d’Activité de la Dabonnière 56380 Guer
+1 Place de l’Hotel de Ville 56380 Guer
+27 Rue du Manoir 56380 Guer
+1bis Rue de l'Etang 56310 Guern
+Place de Polignac 56520 Guidel
+Place du Bas Pouldu 56520 Guidel
+4 Place de la Mairie 56800 Guillac
+1 Béluré 56840 Île-d'Arz
+2bis Rue Gustave Flaubert 56650 Inzinzac-Lochrist
+Place de la Mairie 56120 La Croix-Helléan
+25 Rue Crespel de Latouche 56130 La Roche-Bernard
+1365 Cours des Quais 56470 La Trinité-sur-Mer
+Place de l'Eglise 56470 La Trinité-sur-Mer
+2 Place du Palais 56250 La Vraie-Croix
+71 Avenue François Billoux 56600 Lanester
+33 Route de Vannes 56870 Larmor-Baden
+26 Avenue General de Gaulle 56260 Larmor-Plage
+24 Avenue General de Gaulle 56260 Larmor-Plage
+4 Rue des Châteaux 56260 Larmor-Plage
+16 Rue du Rodoué 56220 Limerzel
+86 Rue des Acadiens 56360 Locmaria
+9 Rond Point de la Republique 56500 Locminé
+1 Rue du Coedo 56550 Locoal-Mendon
+6 Rue commandant Charcot 56100 Lorient
+4 Rue Florian Laporte 56100 Lorient
+53b Rue Jules Le Grand 56100 Lorient
+5 Boulevard Émile Guillerot 56100 Lorient
+1 Rue du Stade 56220 Malansac
+2 Rue Huberdiere 56140 Malestroit
+5 Place Saint Pierre 56130 Marzan
+2ter Grande Rue 56430 Mauron
+4 Rue de la Mairie 56700 Merlevenez
+2 Rue de la Fontaine 56230 Molac
+19 Impasse Adelaide 56190 Muzillac
+1 Place de la Mairie 56190 Noyal-Muzillac
+6 Rue de la Cité des Fleurs 56220 Peillac
+5 Avenue Saint-Pierre 56140 Pleucadeuc
+13 Kergo 56400 Ploemel
+9001 Boulevard François Mitterrand 56270 Ploemeur
+7 Route du Pérello 56270 Ploemeur
+Place de la Mairie 56880 Ploeren
+3 Rue de Sainte Anne 56340 Plouharnel
+5bis Rue du Poul Huern 56680 Plouhinec
+7 Promenade des Estivants 56930 Pluméliau-Bieuzy
+5bis Place Joseph Corfmat 56400 Plumergat
+14 Place du Treano 56620 Pont-Scorff
+2 Rue Colette Besson 56300 Pontivy
+34 Promenade Henri Francois Buffet 56290 Port-Louis
+4 Rue des Bains 56290 Port-Louis
+16 Rue de Verdun 56170 Quiberon
+2 Boulevard des Emigrés 56170 Quiberon
+4 Place de la Mairie 56670 Riantec
+2 Place de l’Eglise 56350 Rieux
+40 Rue Nicolas le Grand 56110 Roudouallec
+83 Route de Tascon 56450 Saint-Armel
+12 Rue de Lescouedec 56890 Saint-Avé
+4bis Route de Redon 56140 Saint-Congard
+15 Route de Malestroit 56140 Saint-Congard
+14 route de Rochefort-en-terre 56220 Saint-Gravé
+11 Rue Saint-Armel 56660 Saint-Jean-Brévelay
+3 Rue de la Mairie 56350 Saint-Jean-la-Poterie
+23 Avenue de la Liberation 56200 Saint-Martin-sur-Oust
+7 Rue des Lavandières 56250 Saint-Nolff
+8 Rue de la Mairie 56350 Saint-Perreux
+1 Rue des Ormes 56470 Saint-Philibert
+51 Chemin des Goémoniers 56470 Saint-Philibert
+2 Promenade de Tiviec 56510 Saint-Pierre-Quiberon
+19 Impasse Kerolet 56370 Sarzeau
+32 Rue Sainte Anne 56370 Sarzeau
+51 Rue du Vertin 56370 Sarzeau
+19 Rue Saint Vincent 56370 Sarzeau
+93 Rue du Reverend Pere Gallen 56360 Sauzon
+71 Rue du Reverend Pere Gallen 56360 Sauzon
+29 Avenue du Porhoët 56800 Taupont
+2 Rue du Lavoir 56460 Val d'Oust
+5 Square de l’Ile Govean 56000 Vannes
+1 Residence du Golfe 56000 Vannes
+5 Allée Jacqueline Auriol 56000 Vannes
+47 Rue Ferdinand le Dressay 56000 Vannes

@@ -1,0 +1,85 @@
+Ref.
+	https://www.w3schools.com/django/django_templates.php
+	https://medium.com/@develperbilalraza/setting-up-a-django-project-with-poetry-a-step-by-step-guide-25269a5869ea
+	
+	http://livre21.com/LIVREF/F6/F006116.pdf
+	https://zestedesavoir.com/tutoriels/pdf/598/developpez-votre-site-web-avec-le-framework-django.pdf
+	
+	
+How to use Poetry ?
+	poetry init
+    	poetry add Django
+    		(...etc)
+    		
+    	pip install djangorestframework
+	pip install markdown       # Markdown support for the browsable API.
+	pip install django-filter
+	
+
+How to install django ?
+    pip3 install Django
+
+
+Create a project
+    django-admin startproject myAppp
+
+    architecture of the project:
+        myApp
+            manage.py
+            myApp
+                __init__.py
+                asgi.py
+                settings.py
+                urls.py
+                wsgi.py
+
+Run the app
+    python3 manage.py runserver
+
+    Open in a browser 127.0.0.1:8000
+
+
+Create a service
+    python3 manage.py startapp myService
+
+    architecture of the project:
+        myApp
+            manage.py
+            myApp
+                __init__.py
+                asgi.py
+                settings.py
+                urls.py
+                wsgi.py
+            myService/
+                migrations/
+                    __init__.py
+                __init__.py
+                admin.py
+                apps.py
+                models.py
+                tests.py
+                views.py
+
+
+Django views are Python functions that take http requests and return http response, like HTML documents
+
+Return HTML templates
+    create 'templates' folder - in service
+    create html template
+    modify views.py
+    change INSTALLED_APPS in myApp/myApp/settings.py
+    run python3 manage.py migrate
+    
+    
+Create Models (sqlite3):
+	Create model in myApp/myService/models.py
+	python3 manage.py makemigrations myService
+	python3 manage.py migrate 
+	python3 manage.py sqlmigrate myService 0001 
+	
+	Insert data
+		python3 manage.py shell
+			from members.models import Member
+			Member.objects.all() 
+	 

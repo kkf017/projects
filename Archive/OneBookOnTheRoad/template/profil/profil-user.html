@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--------------------------------------------------------------------------------------------->
+<head>
+	<title>OBOTR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	
+	
+	<link rel="stylesheet" href="../static/profil-user.css">
+	
+	<!-- Wittgenstein, Bitter, Satisfy, Merienda -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wittgenstein">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Wittgenstein", sans-serif}
+	.w3-bar,h1,button {font-family: "Merienda", sans-serif}
+	.fa-anchor,.fa-coffee {font-size:200px}
+	
+	
+	header{
+		  background-image: url('../static/img/books-on-grass-2.jpg');
+		   background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover; 
+		}
+		
+	body {
+	    /*background-color: #f0f6ff;
+	    color: #28384d;*/
+
+	}
+	/*social */
+	.card-one {
+	    position: relative;
+	    width: 300px;
+	    background: #fff;
+	    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+	}
+	.card {
+	    margin-bottom: 35px;
+	    /*box-shadow: 0 10px 20px 0 rgba(26, 44, 57, 0.14);*/
+	    border: #28384d;
+	}
+
+	.follower-wrapper li {
+	    list-style-type: none;
+	    color: #fff;
+	    display: inline-block;
+	    float: left;
+	    margin-right: 20px;
+	}
+
+	.social-profile {
+	    color: #fff;
+	}
+
+	.social-profile a {
+	    color: #fff;
+	}
+
+	.social-profile {
+	    position: relative;
+	    margin-bottom: 150px;
+	}
+
+	.social-profile .user-profile {
+	    position: absolute;
+	    bottom: -75px;
+	    width: 150px;
+	    height: 150px;
+	    border-radius: 50%;
+	    left: 50px;
+	}
+
+	.social-nav {
+	    position: absolute;
+	    bottom: 0;
+	}
+
+	.social-prof {
+	    color: #333;
+	    text-align: center;
+	}
+
+	.social-prof .wrapper {
+	    width: 70%;
+	    margin: auto;
+	    margin-top: -100px;
+	}
+
+	.social-prof img {
+	    width: 150px;
+	    height: 150px;
+	    border-radius: 50%;
+	    margin-bottom: 20px;
+	    border: 5px solid #fff;
+	    /*border: 10px solid #70b5e6ee;*/
+	}
+
+	.social-prof h3 {
+	    font-size: 36px;
+	    font-weight: 700;
+	    margin-bottom: 0;
+	}
+
+	.social-prof p {
+	    font-size: 18px;
+	}
+
+	.social-prof .nav-tabs {
+	    border: none;
+	}
+
+	.card .nav>li {
+	    position: relative;
+	    display: block;
+	}
+
+	.card .nav>li>a {
+	    position: relative;
+	    display: block;
+	    padding: 10px 15px;
+	    font-weight: 300;
+	    border-radius: 4px;
+	}
+
+	.card .nav>li>a:focus,
+	.card .nav>li>a:hover {
+	    text-decoration: none;
+	    background-color: #eee;
+	}
+
+	.card .s-nav>li>a.active {
+	    text-decoration: none;
+	    background-color: #3afe;
+	    color: #fff;
+	}
+
+	.text-blue {
+	    color: #3afe;
+	}
+
+	ul.friend-list {
+	    margin: 0;
+	    padding: 0;
+	}
+
+	ul.friend-list li {
+	    list-style-type: none;
+	    display: flex;
+	    align-items: center;
+	}
+
+	ul.friend-list li:hover {
+	    background: rgba(0, 0, 0, .1);
+	    cursor: pointer;
+	}
+
+	ul.friend-list .left img {
+	    width: 45px;
+	    height: 45px;
+	    border-radius: 50%;
+	    margin-right: 20px;
+	}
+
+	ul.friend-list li {
+	    padding: 10px;
+	}
+
+	ul.friend-list .right h3 {
+	    font-size: 16px;
+	    font-weight: 700;
+	    margin-bottom: 0;
+	}
+
+	ul.friend-list .right p {
+	    font-size: 11px;
+	    color: #6c757d;
+	    margin: 0;
+	}
+
+	.social-timeline-card .dropdown-toggle::after {
+	    display: none;
+	}
+
+	.info-card h4 {
+	    font-size: 15px;
+	}
+
+	.info-card h2 {
+	    font-size: 18px;
+	    margin-bottom: 20px;
+	}
+
+	.social-about .social-info {
+	    font-size: 16px;
+	    margin-bottom: 20px;
+	}
+
+	.social-about p {
+	    margin-bottom: 20px;
+	}
+
+	.info-card i {
+	    color: #3afe;
+	}
+
+	.card-one {
+	    position: relative;
+	    width: 300px;
+	    background: #fff;
+	    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+	}
+
+	.card-one .header {
+	    position: relative;
+	    width: 100%;
+	    height: 60px;
+	    background-color: #3afe;
+	}
+
+	.card-one .header::before,
+	.card-one .header::after {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    background: inherit;
+	}
+
+	.card-one .header::before {
+	    -webkit-transform: skewY(-8deg);
+	    transform: skewY(-8deg);
+	    -webkit-transform-origin: 100% 100%;
+	    transform-origin: 100% 100%;
+	}
+
+	.card-one .header::after {
+	    -webkit-transform: skewY(8deg);
+	    transform: skewY(8deg);
+	    -webkit-transform-origin: 0 100%;
+	    transform-origin: 0 100%;
+	}
+
+	.card-one .header .avatar {
+	    position: absolute;
+	    left: 50%;
+	    top: 30px;
+	    margin-left: -50px;
+	    z-index: 5;
+	    width: 100px;
+	    height: 100px;
+	    border-radius: 50%;
+	    overflow: hidden;
+	    background: #ccc;
+	    border: 3px solid #fff;
+	}
+
+	.card-one .header .avatar img {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	    width: 100px;
+	    height: auto;
+	}
+
+	.card-one h3 {
+	    position: relative;
+	    margin: 80px 0 30px;
+	    text-align: center;
+	}
+
+	.card-one h3::after {
+	    content: '';
+	    position: absolute;
+	    bottom: -15px;
+	    left: 50%;
+	    margin-left: -15px;
+	    width: 30px;
+	    height: 1px;
+	    background: #000;
+	}
+
+	.card-one .desc {
+	    padding: 0 1rem 2rem;
+	    text-align: center;
+	    line-height: 1.5;
+	    color: #777;
+	}
+
+	.card-one .contacts {
+	    width: 200px;
+	    max-width: 100%;
+	    margin: 0 auto 3rem;
+	}
+
+	.card-one .contacts a {
+	    display: block;
+	    width: 33.333333%;
+	    float: left;
+	    text-align: center;
+	    color: #c8c;
+	}
+
+	.card-one .contacts a:hover {
+	    color: #333;
+	}
+
+	.card-one .contacts a:hover .fa::before {
+	    color: #fff;
+	}
+
+	.card-one .contacts a:hover .fa::after {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	.card-one .contacts a .fa {
+	    position: relative;
+	    width: 40px;
+	    height: 40px;
+	    line-height: 39px;
+	    overflow: hidden;
+	    text-align: center;
+	    font-size: 1.3em;
+	}
+
+	.card-one .contacts a .fa:before {
+	    position: relative;
+	    z-index: 1;
+	}
+
+	.card-one .contacts a .fa::after {
+	    content: '';
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    width: 0;
+	    height: 0;
+	    -webkit-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	    background: #c8c;
+	    transition: width .3s, height .3s;
+	}
+
+	.card-one .contacts a:last-of-type .fa {
+	    line-height: 36px;
+	}
+
+	.card-one .footer {
+	    position: relative;
+	    padding: 1rem;
+	    background-color: #3afe;
+	    text-align: center;
+	}
+
+	.card-one .footer a {
+	    padding: 0 1rem;
+	    color: #e2e2e2;
+	    transition: color .4s;
+	}
+
+	.card-one .footer a:hover {
+	    color: #c8c;
+	}
+
+	.card-one .footer::before {
+	    content: '';
+	    position: absolute;
+	    top: -27px;
+	    left: 50%;
+	    margin-left: -15px;
+	    border: 15px solid transparent;
+	    border-bottom-color: #3afe;
+	}
+
+	#gallery li {
+	    width: 24%;
+	    float: left;
+	    margin: 6px;
+	   
+	}
+	</style>
+</head>
+<!--------------------------------------------------------------------------------------------->
+
+
+<body>
+
+
+<!--------------------------------------------------------------------------------------------->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-light-grey w3-card w3-left-align w3-medium">
+    
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-purple w3-medium" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+     <a href="/search?uid={{user.hash}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-pink w3-hover-white" title="home"><i class="fa fa-home"></i></a>
+  
+  <a href="/acc?uid={{user.hash}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-globe"></i></a>
+  
+   <a href="/contact?uid={{user.hash}}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-envelope"></i></a>
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-purple">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+    
+    
+   <a href="/logout/" class="w3-bar-item w3-button w3-hide-small w3-right  w3-hover-white w3-text-black"><i class=""></i>Logout</b></a>
+
+    <!--<a href="/contact?uid={{user.hash}}" class="w3-bar-item w3-button w3-hide-small w3-right  w3-hover-white w3-text-black"><i class=""></i>Contact</b></a>-->
+  </div>
+  
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/search?uid={{user.hash}}" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="/acc?uid={{user.hash}}" class="w3-bar-item w3-button w3-padding-large">Account</a>
+    <a href="/contact?uid={{user.hash}}" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="/logout/" class="w3-bar-item w3-button w3-padding-large">Logout</a>
+  </div>
+</div>
+<!--------------------------------------------------------------------------------------------->
+
+
+
+<!------------------------------------------------------------------------>
+
+
+<!--<div class="">
+    <div class="img" style="    background-image: linear-gradient(150deg, rgba(63, 174, 255, .3)15%, rgba(63, 174, 255, .3)70%, rgba(63, 174, 255, .3)94%), url('../static/img/books-on-grass-2.jpg');
+    height: 450px;background-size: cover;"></div>
+    <div class="card social-prof">
+        <div class="card-body">
+            <div class="wrapper">
+                <img src="../static/img/redpanda.jpg" alt="" class="user-profile">
+                <h3>{{user.username}}</h3>
+                <p></p>
+            </div>
+            
+            <div class="w3-card w3-round w3-white">
+		<div class="w3-container">
+		 <p><i class="fa fa-user fa-fw w3-margin-right w3-text-theme w3-purple"></i>{{user.username}}  <a href="/unknown/" class=" w3-button w3-circle fa fa-pencil" style="size:50%"></a></p>
+		 <p><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i>{{user.email}}</p>
+		 <p><i class="fa fa-eye fa-fw w3-margin-right w3-text-theme"></i>{{user.password}}</p>
+		</div>
+	
+	     
+	      <form action="/acc/updt?uid={{user.hash}}" enctype="multipart/form-data" method="post">
+		   <div class="w3-row-padding w3-center">
+		      <p align="center"><button class="w3-button w3-dark-grey w3-center w3-section" type="submit">
+			  <i class="fa fa-pencil"></i> Change it ! </button></p>
+		  </div>      
+		  </form>
+        </div>
+       </div>--->
+        
+        
+ <div class="">
+    <div class="img" style="    background-image: linear-gradient(150deg, rgba(63, 174, 255, .3)15%, rgba(63, 174, 255, .3)70%, rgba(63, 174, 255, .3)94%), url('../static/img/books-on-grass-2.jpg');
+    height: 450px;background-size: cover;"></div>
+    <div class="card social-prof">
+        <div class="card-body">
+            <div class="wrapper">
+                <img src="../static/img/redpanda.jpg" alt="" class="user-profile">
+                <h3>{{user.username}}<a href="/acc/user?uid={{user.hash}}" class=" w3-button w3-circle fa fa-pencil" style="size:50%"></a></h3>
+                
+                <p></p>
+            </div>
+            
+        </div>
+     </div> 
+ </div>
+
+<div class="w3-content w3-container w3-padding-64">
+<!-- <form action="/send/" enctype="multipart/form-data" method="post">-->
+       
+
+  <h5 class="w3-center"> <p><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme w3-purple"></i>{{user.email}}  <a href="/acc/email?uid={{user.hash}}" class=" w3-button w3-circle fa fa-pencil" style="size:50%"></a></p></h5>
+       
+        
+  <h5 class="w3-center"> <p><i class="fa fa-eye fa-fw w3-margin-right w3-text-theme w3-purple"></i>Change my password !<a href="/acc/password?uid={{user.hash}}" class=" w3-button w3-circle fa fa-pencil" style="size:50%"></a></p></h5>
+        
+        
+       
+        <!--<p align="center"><button class="w3-button w3-dark-grey w3-center w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND </button></p>
+      </form>-->
+</div>
+  
+</div>
+<br>
+ 
+
+<!------------------------------------------------------------------------>
+
+ 
+<!--------------------------------------------------------------------------------------------->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+<!--------------------------------------------------------------------------------------------->
+
+
+
+</body>
+</html>

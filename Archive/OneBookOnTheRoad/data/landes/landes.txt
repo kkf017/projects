@@ -1,0 +1,135 @@
+18 Boulevard Lamothe 40800 Aire-sur-l'Adour
+415 Rue Jean Dulos 40110 Arengosse
+496 Route de Sore 40430 Argelouse
+415 Route de Bascons 40090 Artassenx
+29 Route du Tursan 40700 Aubagnan
+14 Avenue des Pastous 40500 Aurice
+1 le Bourg 40500 Banos
+Square Cel le Gaucher 40090 Bascons
+
+137 Route d’Albret 40120 Bélis
+16d Rue de l'Eglise 40230 Bénesse-Maremne
+191 Avenue de l'Alsace 40280 Benquet
+220 Route Bellevue 40250 Bergouey
+14 Route des Chênes 40390 Biarrotte
+578 Route du Bourg 40390 Biaudos
+350 Route du Bourg 40390 Biaudos
+283 Avenue Saint Exupéry 40600 Biscarrosse
+14 Chemin du Cimetière 40600 Biscarrosse
+55 Place Georges Dufau 40600 Biscarrosse
+712bis Chemin de Navarrosse 40600 Biscarrosse
+55 Place de la Fontaine 40600 Biscarrosse
+11 Avenue du Pas 40280 Bretagne-de-Marsan
+187 Rue des Ecoles 40180 Candresse
+2 Avenue Georges Clémenceau 40130 Capbreton
+65 Route de l'Ocean 40330 Castel-Sarrazin
+206 Chemin du Barrat 40260 Castets
+35 Chemin du Laminoir 40260 Castets
+123 Place de la Mairie 40180 Clermont
+1 Esplanade du General de Gaulle 40100 Dax
+9d Avenue de la Gare 40100 Dax
+42 Place de la Fontaine Chaude 40100 Dax
+1bis Allee du Bois de Boulogne 40100 Dax
+30 Impasse de la Fontaine 40800 Duhort-Bachen
+28 Place de la Mairie 40350 Gaas
+56 Route de Lagardère 40090 Geloux
+600 Route de Labourdette 40400 Gouts
+7 Rue Charles de Borda 40270 Grenade-sur-l'Adour
+61 Chemin des Loussets 40700 Hagetmau
+Le Bourg 40300 Hastingues
+40 Rue de Bayonne 40280 Haut-Mauco
+66 Avenue de l'Océan 40990 Herm
+80 Route de Pouillon 40180 Heugas
+51 Route de Gamarde 40180 Hinx
+64 Boulevard des Pyrénées 40300 Labatut
+57 Avenue Charles de Gaulle 40530 Labenne
+1261a Route Océane 40530 Labenne
+901 La Dune 40530 Labenne
+Route du Bourg 40320 Lacajunte
+61 Route de l'Armagnac 40120 Lacquy
+18 Le Bourg 40090 Laglorieuse
+63 Avenue des Arènes 40270 Larrivière-Saint-Savin
+172 Route de Labastide 40190 Le Frêche
+60 Route de Roquefort 40120 Lencouacq
+132c Rue de l'Hôtel de Ville 40170 Lit-et-Mixe
+132c Rue de l'Hôtel de Ville 40170 Lit-et-Mixe
+Route d'Estampon 40240 Losse
+19 Avenue de Maremne 40140 Magescq
+52 Avenue de la Grande Lande 40090 Mazerolles
+582 Avenue Emile Despax 40990 Mées
+95 Rue des Ecoles 40990 Mées
+884 Avenue Emile Despax 40990 Mées
+68 Rue des Ecoles 40400 Meilhan
+2 Route des Lacs 40660 Messanges
+230 La Dune Nord 40660 Messanges
+1 Quartier Taberne 40170 Mézos
+
+38 Avenue Maurice Martin 40200 Mimizan
+133 Rue de la Mairie 40320 Miramont-Sensacq
+29 Avenue Jean Dupouy 40000 Mont-de-Marsan
+4 Cale de la Marine 40000 Mont-de-Marsan
+1bis Rue Lacataye 40000 Mont-de-Marsan
+15 Avenue de la Laicite 40000 Mont-de-Marsan
+19bis Avenue de Dagas 40000 Mont-de-Marsan
+6 Allée René Lesperon 40000 Mont-de-Marsan
+249 Avenue du Colonel Kw Rozanoff 40000 Mont-de-Marsan
+169 Place du Foirail 40380 Montfort-en-Chalosse
+29 Côte du Parquet 40380 Montfort-en-Chalosse
+169 Place du Foirail 40380 Montfort-en-Chalosse
+29 Côte du Parquet 40380 Montfort-en-Chalosse
+165 Rue Saint Gilles 40500 Montgaillard
+Le Bourg 40410 Moustey
+220 Route de Pomarez 40250 Mugron
+8 Côte de Pouton 40250 Nerbis
+De Place la Mairie 40380 Nousse
+1684 Avenue de la Plage 40440 Ondres
+33f Allée des Embruns 40440 Ondres
+120 Place Richard Feuillet 40440 Ondres
+30 Route de Lahourcade 40300 Orthevielle
+2 Place du Fronton 40230 Orx
+41 Place General de Gaulle 40160 Parentis-en-Born
+474 Route des Campings 40160 Parentis-en-Born
+58 Avenue Gustave Caliot 40200 Pontenx-les-Forges
+75 Route du Thicq 40465 Préchacq-les-Bains
+135 Chemin de Menaout 40465 Préchacq-les-Bains
+148 Avenue du Bourg 40190 Pujo-le-Plan
+65 Place de l'Eglise 40180 Rivière-Saas-et-Gourby
+19 Place Tillet 40120 Roquefort
+18 Route du Plan 40190 Saint-Gein
+199 Rue Helene Dibos 40170 Saint-Julien-en-Born
+2 Allée du Fronton 40390 Saint-Martin-de-Seignanx
+24 Avenue de la Liberté 40990 Saint-Paul-lès-Dax
+124 Allée de Christus 40990 Saint-Paul-lès-Dax
+1 Rue Ferdinand 40990 Saint-Paul-lès-Dax
+1 Av du 34e Regiment d’Infanterie 40990 Saint-Paul-lès-Dax
+28 Rue des Acacias 40280 Saint-Pierre-du-Mont
+25 Rue du Berdouzet 40280 Saint-Pierre-du-Mont
+12 Rue Charles Lindbergh 40280 Saint-Pierre-du-Mont
+230 Avenue de Portal 40280 Saint-Pierre-du-Mont
+152 Rue de la Dominante 40280 Saint-Pierre-du-Mont
+27 Rue des Enfants 40990 Saint-Vincent-de-Paul
+971 Avenue Nationale 40230 Saint-Vincent-de-Tyrosse
+1869 Route du Lac 40200 Sainte-Eulalie-en-Born
+405 Avenue de Losa 40460 Sanguinet
+653 Chemin de Sabas 40460 Sanguinet
+100 Route de Maremne 40180 Saubusse
+1 Place de la Mairie 40180 Saugnac-et-Cambran
+1 Place de la Mairie 40180 Saugnac-et-Cambran
+Rue Léon Blum 40510 Seignosse
+65 Rue du Village Grec 40510 Seignosse
+55 Route de l'Eglise 40180 Seyresse
+60 Place de l’’Eglise 40300 Sorde-l'Abbaye
+14 Impasse de l'Orée du Bois 40140 Soustons
+111 Rue de la Croix Saint Marc 40260 Taller
+Chemin du Lavoir 40260 Taller
+Chemin du Lavoir 40260 Taller
+58 Boulevard Jacques Duclos 40220 Tarnos
+21bis Place Gambetta 40400 Tartas
+19 Route des Pêcheurs 40250 Toulouzette
+31 Rue de Lit-et-mixe 40170 Uza
+4756 Route de la Plage 40560 Vielle-Saint-Girons
+18 Avenue de Moisan 40480 Vieux-Boucau-les-Bains
+14 Avenue de Moisan 40480 Vieux-Boucau-les-Bains
+80 Avenue du Marsan 40190 Villeneuve-de-Marsan
+2 Rue des Fauvettes 40180 Yzosse
+31 Rue des Ecoles 40180 Yzosse

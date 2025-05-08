@@ -1,0 +1,49 @@
+2 R Droite 04240 Annot
+5102 Route des Duyes 04380 Barras
+323 Rue Principale 04660 Champtercier
+1208 La Gare de Saint Auban 04600 Château-Arnoux-Saint-Auban
+34 boulevard gassendi 04000 Digne-les-Bains
+22 chemin sainte-thérèse 04000 Digne-les-Bains
+3 Rue Paul Roustan 04000 Digne-les-Bains
+20 Chemin du Village de Gaubert 04000 Digne-les-Bains
+39 boulevard victor hugo 04000 Digne-les-Bains
+chemin des ajoncs 04000 Digne-les-Bains
+1 Place Théodore Aubanel 04000 Digne-les-Bains
+25 Le Village 04420 Draix
+8 Rue de la Porte Royale 04320 Entrevaux
+36 Grand'Rue 04270 Estoublon
+13 Place du Bourguet 04300 Forcalquier
+6 Impasse des Cordeliers 04300 Forcalquier
+1 Place de la Mairie 04310 Ganagobie
+4 Chemin de Haute Boulogne 04120 La Palud-sur-Verdon
+286 Route du Mousteiret (d222) 04420 Le Brusquet
+2514 Route du Serre 04700 Lurs
+1 Place de la Mairie 04700 Lurs
+18 Place Joseph Coutel 04350 Malijai
+1 Rue Voland 04100 Manosque
+4 Rue du Tribunal 04100 Manosque
+11 Place de l’Hôtel de Ville 04100 Manosque
+2450 Route de l'Abbaye du Laverq 04340 Méolans-Revel
+23 Place Capitaine Victor Arnoux 04270 Mézel
+7 Rue des Remparts 04110 Montjustin
+11 Chemin des Oliviers 04360 Moustiers-Sainte-Marie
+
+3 Impasse du Clos 04200 Peipin
+137 Avenue Saint-Roch 04310 Peyruis
+5 Avenue de Saint-Véran 04860 Pierrevert
+175 Cours Olivier Thierry d’Argenlieu 04110 Reillanne
+40 Rue du Marché 04500 Riez
+1 Rue des bregancons 04800 Saint-Martin-de-Brômes
+Place de la Fontaine 04300 Saint-Martin-les-Eaux
+40 Avenue des Acacias 04400 Saint-Pons
+1 Passage des Mules 04140 Seyne
+Les Capucins 04200 Sisteron
+40 Avenue de la Libération 04200 Sisteron
+172 Le Village 04380 Thoard
+1 Rue Séraphin  Michel 04340 Ubaye-Serre-Ponçon
+1 Rue de la Fondgrande 04530 Val d'Oronaye
+17 Rue de l'Ancienne Poste 04110 Villemus
+8 La Plaine 04180 Villeneuve
+382 Chemin du Moulin 04180 Villeneuve
+1 Chemin des Ecoliers 04180 Villeneuve
+1009 Chemin du Moulin 04180 Villeneuve

@@ -1,0 +1,25 @@
+<!--------------------------------------------------------------------------------------------->
+<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">One Book On The Road</h1>
+  <p class="w3-xlarge">Find the nearest book box !</p>
+  
+  <form action="/location/" enctype="multipart/form-data" method="post">
+      <div class="w3-row w3-section">
+            <div class="w3-rest" align = "center">
+                <input class="w3-border" name="search-addr" type="text" id="search-addr" placeholder="Address" style="height:35px;width: 425px">
+           
+            
+             <select class="w3-select w3-border w3-white" name="search-radius" id="search-radius" style="padding:128px height:25px;width: 65px">
+	    <option value="10">10 km</option>
+	    <option value="20">20 km</option>
+	    <option value="30">30 km</option>
+	    <option value="30">50 km</option>
+	  </select>
+            </div>
+        </div>
+  
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Search</button>
+  
+  </form>
+</header>
+<!--------------------------------------------------------------------------------------------->

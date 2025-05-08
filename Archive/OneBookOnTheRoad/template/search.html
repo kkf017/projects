@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--------------------------------------------------------------------------------------------->
+<head>
+	<title>OBOTR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	
+	
+	<!-- Wittgenstein, Bitter, Satisfy, Merienda -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Wittgenstein">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Wittgenstein", sans-serif}
+	.w3-bar,h1,button {font-family: "Merienda", sans-serif}
+	.fa-anchor,.fa-coffee {font-size:200px}
+	
+	
+	header{
+		  background-image: url('../static/img/books-on-grass-2.jpg');
+		   background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover; /*100% 100%;
+		}
+	</style>
+</head>
+<!--------------------------------------------------------------------------------------------->
+
+
+<body>
+
+
+<!--------------------------------------------------------------------------------------------->
+<div class="w3-top">
+  <div class="w3-light-grey w3-card w3-left-align w3-medium">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-purple w3-medium" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <a href="/" class="fa fa-home w3-bar-item w3-button w3-padding-large w3-pink"></a>
+
+    <a href="/login/" class="w3-bar-item w3-button w3-hide-small w3-right w3-text-black"><i class=""></i>Login</b></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+  </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------->
+<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">One Book On The Road</h1>
+  <p class="w3-xlarge">Find the nearest book box !</p>
+  
+  <form action="/location/" enctype="multipart/form-data" method="post">
+      <div class="w3-row w3-section">
+            <div class="w3-rest" align = "center">
+                <input class="w3-border" name="search-addr" type="text" id="search-addr" placeholder="Address" style="height:35px;width: 425px">
+           
+            
+             <select class="w3-select w3-border w3-white" name="search-radius" id="search-radius" style="padding:128px height:25px;width: 65px">
+	    <option value="10">10 km</option>
+	    <option value="20">20 km</option>
+	    <option value="30">30 km</option>
+	    <option value="30">50 km</option>
+	  </select>
+            </div>
+        </div>
+  
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Search</button>
+  
+  </form>
+</header>
+<!--------------------------------------------------------------------------------------------->
+
+ 
+<!---------------------------------------------------------------------------------------->
+
+     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Find your place !</h1> 
+        
+     <form action="/request/" enctype="multipart/form-data" method="post">
+      <div class="w3-row w3-section ">
+            <div class="w3-rest" align = "center">          
+            
+             <select class="w3-select w3-border w3-white" name="filter-country" id="filter-country" style="padding:128px height:25px;width: 125px">
+             <option value="None">---</option>
+	    <option value="France">France</option>
+	  </select>
+	  
+	  
+             <select class="w3-select w3-border w3-white" name="filter-region" id="filter-region" style="padding:128px height:25px;width: 125px">
+	    <option value="None">---</option>
+	    <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+	    <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+	    <option value="Bretagne">Bretagne</option>
+	    <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+	    <option value="Corse">Corse</option>
+	    <option value="Grand Est">Grand Est</option>
+	    <option value="Hauts-de-France">Hauts-de-France</option>
+	    <option value="Normandie">Normandie</option>
+	    <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+	    <option value="Occitanie">Occitanie</option>
+	    <option value="Pays de la Loire">Pays de la Loire</option>
+	    <option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+	    <option value="Île-de-France">Île-de-France</option>
+	  </select>
+	  
+	  
+             <select class="w3-select w3-border w3-white" name="filter-department" id="filter-department" style="padding:128px height:25px;width: 125px">
+	    	<option value="None">---</option>
+		<option value="Ain">Ain</option>
+		<option value="Aisne">Aisne</option>
+		<option value="Allier">Allier</option>
+		<option value="Alpes-Maritimes">Alpes-Maritimes</option>
+		<option value="Alpes-de-Haute-Provence">Alpes-de-Haute-Provence</option>
+		<option value="Ardennes">Ardennes</option>
+		<option value="Ardèche">Ardèche</option>
+		<option value="Ariège">Ariège</option>
+		<option value="Aube">Aube</option>
+		<option value="Aude">Aude</option>
+		<option value="Aveyron">Aveyron</option>
+		<option value="Bas-Rhin">Bas-Rhin</option>
+		<option value="Bouches-du-Rhône">Bouches-du-Rhône</option>
+		<option value="Calvados">Calvados</option>
+		<option value="Cantal">Cantal</option>
+		<option value="Charente">Charente</option>
+		<option value="Charente-Maritime">Charente-Maritime</option>
+		<option value="Cher">Cher</option>
+		<option value="Corrèze">Corrèze</option>
+		<option value="Corse-du-Sud">Corse-du-Sud</option>
+		<option value="Creuse">Creuse</option>
+		<option value="Côte-d'Or">Côte-d'Or</option>
+		<option value="Côtes-d'Armor">Côtes-d'Armor</option>
+		<option value="Deux-Sèvres">Deux-Sèvres</option>
+		<option value="Doubs">Doubs</option>
+		<option value="Drôme">Drôme</option>
+		<option value="Essonne">Essonne</option>
+		<option value="Eure">Eure</option>
+		<option value="Eure-et-Loir">Eure-et-Loir</option>
+		<option value="Finistère">Finistère</option>
+		<option value="Gard">Gard</option>
+		<option value="Gers">Gers</option>
+		<option value="Gironde">Gironde</option>
+		<option value="Haut-Rhin">Haut-Rhin</option>
+		<option value="Haute-Corse">Haute-Corse</option>
+		<option value="Haute-Garonne">Haute-Garonne</option>
+		<option value="Haute-Loire">Haute-Loire</option>
+		<option value="Haute-Marne">Haute-Marne</option>
+		<option value="Haute-Savoie">Haute-Savoie</option>
+		<option value="Haute-Saône">Haute-Saône</option>
+		<option value="Haute-Vienne">Haute-Vienne</option>
+		<option value="Hautes-Alpes">Hautes-Alpes</option>
+		<option value="Hautes-Pyrénées">Hautes-Pyrénées</option>
+		<option value="Hauts-de-Seine">Hauts-de-Seine</option>
+		<option value="Hérault">Hérault</option>
+		<option value="Ille-et-Vilaine">Ille-et-Vilaine</option>
+		<option value="Indre">Indre</option>
+		<option value="Indre-et-Loire">Indre-et-Loire</option>
+		<option value="Isère">Isère</option>
+		<option value="Jura">Jura</option>
+		<option value="Landes">Landes</option>
+		<option value="Loir-et-Cher">Loir-et-Cher</option>
+		<option value="Loire">Loire</option>
+		<option value="Loire-Atlantique">Loire-Atlantique</option>
+		<option value="Loiret">Loiret</option>
+		<option value="Lot">Lot</option>
+		<option value="Lot-et-Garonne">Lot-et-Garonne</option>
+		<option value="Lozère">Lozère</option>
+		<option value="Maine-et-Loire">Maine-et-Loire</option>
+		<option value="Manche">Manche</option>
+		<option value="Marne">Marne</option>
+		<option value="Mayenne">Mayenne</option>
+		<option value="Meurthe-et-Moselle">Meurthe-et-Moselle</option>
+		<option value="Meuse">Meuse</option>
+		<option value="Morbihan">Morbihan</option>
+		<option value="Moselle">Moselle</option>
+		<option value="Métropole de Lyon">Métropole de Lyon</option>
+		<option value="Nièvre">Nièvre</option>
+		<option value="Nord">Nord</option>
+		<option value="Oise">Oise</option>
+		<option value="Orne">Orne</option>
+		<option value="Pas-de-Calais">Pas-de-Calais</option>
+		<option value="Puy-de-Dôme">Puy-de-Dôme</option>
+		<option value="Pyrénées-Atlantiques">Pyrénées-Atlantiques</option>
+		<option value="Pyrénées-Orientales">Pyrénées-Orientales</option>
+		<option value="Rhône">Rhône</option>
+		<option value="Sarthe">Sarthe</option>
+		<option value="Savoie">Savoie</option>
+		<option value="Saône-et-Loire">Saône-et-Loire</option>
+		<option value="Seine-Maritime">Seine-Maritime</option>
+		<option value="Seine-Saint-Denis">Seine-Saint-Denis</option>
+		<option value="Seine-et-Marne">Seine-et-Marne</option>
+		<option value="Somme">Somme</option>
+		<option value="Tarn">Tarn</option>
+		<option value="Tarn-et-Garonne">Tarn-et-Garonne</option>
+		<option value="Territoire-de-Belfort">Territoire-de-Belfort</option>
+		<option value="Val-d'Oise">Val-d'Oise</option>
+		<option value="Val-de-Marne">Val-de-Marne</option>
+		<option value="Var">Var</option>
+		<option value="Vaucluse">Vaucluse</option>
+		<option value="Vendée">Vendée</option>
+		<option value="Vienne">Vienne</option>
+		<option value="Vosges">Vosges</option>
+		<option value="Yonne">Yonne</option>
+		<option value="Yvelines">Yvelines</option>
+		
+		<option value="">Paris</option> <!-- Correct in calculation.py -->
+	  </select>
+
+             <select class="w3-select w3-border w3-white" name="filter-town" id="filter-town" style="padding:128px height:25px;width: 125px">
+		<option value="None">---</option>
+		<option value="Abbeville">Abbeville</option>
+		<option value="Agde">Agde</option>
+		<option value="Agen">Agen</option>
+		<option value="Aigues-Mortes">Aigues-Mortes</option>
+		<option value="Aix-en-Othe">Aix-en-Othe</option>
+		<option value="Aix-les-Bains">Aix-les-Bains</option>
+		<option value="Albertville">Albertville</option>
+		<option value="Albi">Albi</option>
+		<option value="Alençon">Alençon</option>
+		<option value="Alfortville">Alfortville</option>
+		<option value="Allonnes">Allonnes</option>
+		<option value="Alès">Alès</option>
+		<option value="Ambarès-et-Lagrave">Ambarès-et-Lagrave</option>
+		<option value="Ambert">Ambert</option>
+		<option value="Amboise">Amboise</option>
+		<option value="Ambérieu-en-Bugey">Ambérieu-en-Bugey</option>
+		<option value="Amnéville">Amnéville</option>
+		<option value="Ancenis">Ancenis</option>
+		<option value="Andernos-les-Bains">Andernos-les-Bains</option>
+		<option value="Anglet">Anglet</option>
+		<option value="Angoulême">Angoulême</option>
+		<option value="Annemasse">Annemasse</option>
+		<option value="Annonay">Annonay</option>
+		<option value="Antony">Antony</option>
+		<option value="Arcachon">Arcachon</option>
+		<option value="Arcueil">Arcueil</option>
+		<option value="Argenton-sur-Creuse">Argenton-sur-Creuse</option>
+		<option value="Arles">Arles</option>
+		<option value="Armentières">Armentières</option>
+		<option value="Arnouville">Arnouville</option>
+		<option value="Arras">Arras</option>
+		<option value="Asnières-sur-Seine">Asnières-sur-Seine</option>
+		<option value="Athis-Mons">Athis-Mons</option>
+		<option value="Aubagne">Aubagne</option>
+		<option value="Aubenas">Aubenas</option>
+		<option value="Aubergenville">Aubergenville</option>
+		<option value="Aubière">Aubière</option>
+		<option value="Aubusson">Aubusson</option>
+		<option value="Auchel">Auchel</option>
+		<option value="Audincourt">Audincourt</option>
+		<option value="Aulnay-sous-Bois">Aulnay-sous-Bois</option>
+		<option value="Auray">Auray</option>
+		<option value="Aurillac">Aurillac</option>
+		<option value="Autun">Autun</option>
+		<option value="Auxerre">Auxerre</option>
+		<option value="Avallon">Avallon</option>
+		<option value="Avon">Avon</option>
+		<option value="Avrillé">Avrillé</option>
+		<option value="Bagneux">Bagneux</option>
+		<option value="Bagnolet">Bagnolet</option>
+		<option value="Bagnols-sur-Cèze">Bagnols-sur-Cèze</option>
+		<option value="Bailleul">Bailleul</option>
+		<option value="Balma">Balma</option>
+		<option value="Bar-le-Duc">Bar-le-Duc</option>
+		<option value="Bar-sur-Aube">Bar-sur-Aube</option>
+		<option value="Bar-sur-Seine">Bar-sur-Seine</option>
+		<option value="Barbezieux">Barbezieux</option>
+		<option value="Bayeux">Bayeux</option>
+		<option value="Bayonne">Bayonne</option>
+		<option value="Bazouges la Perouse">Bazouges la Perouse</option>
+		<option value="Beaumont">Beaumont</option>
+		<option value="Beaune">Beaune</option>
+		<option value="Belfort">Belfort</option>
+		<option value="Belleville-en-Beaujolais">Belleville-en-Beaujolais</option>
+		<option value="Belley">Belley</option>
+		<option value="Bernay">Bernay</option>
+		<option value="Berre-l'Étang">Berre-l'Étang</option>
+		<option value="Betton">Betton</option>
+		<option value="Biarritz">Biarritz</option>
+		<option value="Billère">Billère</option>
+		<option value="Blagnac">Blagnac</option>
+		<option value="Blanquefort">Blanquefort</option>
+		<option value="Blois">Blois</option>
+		<option value="Bois-Colombes">Bois-Colombes</option>
+		<option value="Bonneville">Bonneville</option>
+		<option value="Bouguenais">Bouguenais</option>
+		<option value="Boulogne-sur-Mer">Boulogne-sur-Mer</option>
+		<option value="Bourg-Saint-Maurice">Bourg-Saint-Maurice</option>
+		<option value="Bourg-en-Bresse">Bourg-en-Bresse</option>
+		<option value="Bourg-lès-Valence">Bourg-lès-Valence</option>
+		<option value="Bourges">Bourges</option>
+		<option value="Bourgoin-Jallieu">Bourgoin-Jallieu</option>
+		<option value="Bressuire">Bressuire</option>
+		<option value="Briançon">Briançon</option>
+		<option value="Brignais">Brignais</option>
+		<option value="Brioude">Brioude</option>
+		<option value="Brive-la-Gaillarde">Brive-la-Gaillarde</option>
+		<option value="Bron">Bron</option>
+		<option value="Bruges">Bruges</option>
+		<option value="Brumath">Brumath</option>
+		<option value="Brunoy">Brunoy</option>
+		<option value="Bruz">Bruz</option>
+		<option value="Bry-sur-Marne">Bry-sur-Marne</option>
+		<option value="Bully-les-Mines">Bully-les-Mines</option>
+		<option value="Bussy-Saint-Georges">Bussy-Saint-Georges</option>
+		<option value="Bègles">Bègles</option>
+		<option value="Béthune">Béthune</option>
+		<option value="Cabestany">Cabestany</option>
+		<option value="Cachan">Cachan</option>
+		<option value="Cagnes-sur-Mer">Cagnes-sur-Mer</option>
+		<option value="Cahors">Cahors</option>
+		<option value="Caluire-et-Cuire">Caluire-et-Cuire</option>
+		<option value="Calvi">Calvi</option>
+		<option value="Cambo-les-Bains">Cambo-les-Bains</option>
+		<option value="Cambrai">Cambrai</option>
+		<option value="Canet-en-Roussillon">Canet-en-Roussillon</option>
+		<option value="Cannes">Cannes</option>
+		<option value="Carcassonne">Carcassonne</option>
+		<option value="Carentan-les-Marais">Carentan-les-Marais</option>
+		<option value="Carpentras">Carpentras</option>
+		<option value="Carquefou">Carquefou</option>
+		<option value="Carrières-sous-Poissy">Carrières-sous-Poissy</option>
+		<option value="Carrières-sur-Seine">Carrières-sur-Seine</option>
+		<option value="Castanet-Tolosan">Castanet-Tolosan</option>
+		<option value="Castelginest">Castelginest</option>
+		<option value="Castelnau-le-Lez">Castelnau-le-Lez</option>
+		<option value="Castelsarrasin">Castelsarrasin</option>
+		<option value="Castres">Castres</option>
+		<option value="Cenon">Cenon</option>
+		<option value="Cergy">Cergy</option>
+		<option value="Cernay">Cernay</option>
+		<option value="Cesson-Sévigné">Cesson-Sévigné</option>
+		<option value="Cestas">Cestas</option>
+		<option value="Challans">Challans</option>
+		<option value="Chalon-sur-Saône">Chalon-sur-Saône</option>
+		<option value="Chamalières">Chamalières</option>
+		<option value="Chambray-lès-Tours">Chambray-lès-Tours</option>
+		<option value="Chambéry">Chambéry</option>
+		<option value="Chamonix-Mont-Blanc">Chamonix-Mont-Blanc</option>
+		<option value="Champagnole">Champagnole</option>
+		<option value="Champs-sur-Marne">Champs-sur-Marne</option>
+		<option value="Chantepie">Chantepie</option>
+		<option value="Chantilly">Chantilly</option>
+		<option value="Charenton-le-Pont">Charenton-le-Pont</option>
+		<option value="Charleville-Mézières">Charleville-Mézières</option>
+		<option value="Chartres">Chartres</option>
+		<option value="Chatou">Chatou</option>
+		<option value="Chaumont">Chaumont</option>
+		<option value="Chauny">Chauny</option>
+		<option value="Chauvigny">Chauvigny</option>
+		<option value="Chaville">Chaville</option>
+		<option value="Chelles">Chelles</option>
+		<option value="Cherbourg-en-Cotentin">Cherbourg-en-Cotentin</option>
+		<option value="Chevigny-Saint-Sauveur">Chevigny-Saint-Sauveur</option>
+		<option value="Chevilly-Larue">Chevilly-Larue</option>
+		<option value="Chinon">Chinon</option>
+		<option value="Choisy-le-Roi">Choisy-le-Roi</option>
+		<option value="Cholet">Cholet</option>
+		<option value="Châlons-en-Champagne">Châlons-en-Champagne</option>
+		<option value="Château-Gontier">Château-Gontier</option>
+		<option value="Château-Thierry">Château-Thierry</option>
+		<option value="Châteaudun">Châteaudun</option>
+		<option value="Châteauroux">Châteauroux</option>
+		<option value="Châtellerault">Châtellerault</option>
+		<option value="Châtenay-Malabry">Châtenay-Malabry</option>
+		<option value="Châtillon">Châtillon</option>
+		<option value="Châtillon-sur-Chalaronne">Châtillon-sur-Chalaronne</option>
+		<option value="Clamart">Clamart</option>
+		<option value="Clichy">Clichy</option>
+		<option value="Cluny">Cluny</option>
+		<option value="Cluses">Cluses</option>
+		<option value="Cognac">Cognac</option>
+		<option value="Colmar">Colmar</option>
+		<option value="Colombes">Colombes</option>
+		<option value="Colomiers">Colomiers</option>
+		<option value="Combs-la-Ville">Combs-la-Ville</option>
+		<option value="Compiègne">Compiègne</option>
+		<option value="Concarneau">Concarneau</option>
+		<option value="Conflans-Sainte-Honorine">Conflans-Sainte-Honorine</option>
+		<option value="Cormeilles-en-Parisis">Cormeilles-en-Parisis</option>
+		<option value="Corte">Corte</option>
+		<option value="Cosne-Cours-sur-Loire">Cosne-Cours-sur-Loire</option>
+		<option value="Coudekerque-Branche">Coudekerque-Branche</option>
+		<option value="Courbevoie">Courbevoie</option>
+		<option value="Cournon-d'Auvergne">Cournon-d'Auvergne</option>
+		<option value="Coutances">Coutances</option>
+		<option value="Creil">Creil</option>
+		<option value="Croix">Croix</option>
+		<option value="Créteil">Créteil</option>
+		<option value="Cugnaux">Cugnaux</option>
+		<option value="Cusset">Cusset</option>
+		<option value="Dax">Dax</option>
+		<option value="Decazeville">Decazeville</option>
+		<option value="Deuil-la-Barre">Deuil-la-Barre</option>
+		<option value="Dieppe">Dieppe</option>
+		<option value="Digne-les-Bains">Digne-les-Bains</option>
+		<option value="Dinard">Dinard</option>
+		<option value="Dives-sur-Mer">Dives-sur-Mer</option>
+		<option value="Dole">Dole</option>
+		<option value="Domont">Domont</option>
+		<option value="Douai">Douai</option>
+		<option value="Douarnenez">Douarnenez</option>
+		<option value="Dourdan">Dourdan</option>
+		<option value="Draguignan">Draguignan</option>
+		<option value="Drancy">Drancy</option>
+		<option value="Draveil">Draveil</option>
+		<option value="Dugny">Dugny</option>
+		<option value="Décines-Charpieu">Décines-Charpieu</option>
+		<option value="Déville-lès-Rouen">Déville-lès-Rouen</option>
+		<option value="Eaubonne">Eaubonne</option>
+		<option value="Elbeuf">Elbeuf</option>
+		<option value="Enghien-les-Bains">Enghien-les-Bains</option>
+		<option value="Ermont">Ermont</option>
+		<option value="Ernée">Ernée</option>
+		<option value="Erstein">Erstein</option>
+		<option value="Eysines">Eysines</option>
+		<option value="Faches-Thumesnil">Faches-Thumesnil</option>
+		<option value="Falaise">Falaise</option>
+		<option value="Figeac">Figeac</option>
+		<option value="Firminy">Firminy</option>
+		<option value="Fleury-les-Aubrais">Fleury-les-Aubrais</option>
+		<option value="Floirac">Floirac</option>
+		<option value="Foix">Foix</option>
+		<option value="Fondettes">Fondettes</option>
+		<option value="Fontainebleau">Fontainebleau</option>
+		<option value="Fontenay-aux-Roses">Fontenay-aux-Roses</option>
+		<option value="Fontenay-sous-Bois">Fontenay-sous-Bois</option>
+		<option value="Forbach">Forbach</option>
+		<option value="Fos-sur-Mer">Fos-sur-Mer</option>
+		<option value="Fougères">Fougères</option>
+		<option value="Francheville">Francheville</option>
+		<option value="Franconville">Franconville</option>
+		<option value="Frontignan">Frontignan</option>
+		<option value="Fréjus">Fréjus</option>
+		<option value="Fécamp">Fécamp</option>
+		<option value="Gagny">Gagny</option>
+		<option value="Gaillac">Gaillac</option>
+		<option value="Gap">Gap</option>
+		<option value="Garches">Garches</option>
+		<option value="Genas">Genas</option>
+		<option value="Gennevilliers">Gennevilliers</option>
+		<option value="Gentilly">Gentilly</option>
+		<option value="Gex">Gex</option>
+		<option value="Gif-sur-Yvette">Gif-sur-Yvette</option>
+		<option value="Givors">Givors</option>
+		<option value="Goussainville">Goussainville</option>
+		<option value="Gradignan">Gradignan</option>
+		<option value="Granville">Granville</option>
+		<option value="Guebwiller">Guebwiller</option>
+		<option value="Guidel">Guidel</option>
+		<option value="Guilherand-Granges">Guilherand-Granges</option>
+		<option value="Guingamp">Guingamp</option>
+		<option value="Gujan-Mestras">Gujan-Mestras</option>
+		<option value="Guyancourt">Guyancourt</option>
+		<option value="Guérande">Guérande</option>
+		<option value="Guéret">Guéret</option>
+		<option value="Gérardmer">Gérardmer</option>
+		<option value="Haguenau">Haguenau</option>
+		<option value="Haubourdin">Haubourdin</option>
+		<option value="Hazebrouck">Hazebrouck</option>
+		<option value="Hellemmes-Lille">Hellemmes-Lille</option>
+		<option value="Hem">Hem</option>
+		<option value="Hendaye">Hendaye</option>
+		<option value="Herblay-sur-Seine">Herblay-sur-Seine</option>
+		<option value="Honfleur">Honfleur</option>
+		<option value="Houilles">Houilles</option>
+		<option value="Hyères">Hyères</option>
+		<option value="Hénin-Beaumont">Hénin-Beaumont</option>
+		<option value="Hérouville-Saint-Clair">Hérouville-Saint-Clair</option>
+		<option value="Igny">Igny</option>
+		<option value="Illkirch-Graffenstaden">Illkirch-Graffenstaden</option>
+		<option value="Illzach">Illzach</option>
+		<option value="Issoire">Issoire</option>
+		<option value="Issy-les-Moulineaux">Issy-les-Moulineaux</option>
+		<option value="Istres">Istres</option>
+		<option value="Ivry-sur-Seine">Ivry-sur-Seine</option>
+		<option value="Jarny">Jarny</option>
+		<option value="Jarville-la-Malgrange">Jarville-la-Malgrange</option>
+		<option value="Joigny">Joigny</option>
+		<option value="Joinville-le-Pont">Joinville-le-Pont</option>
+		<option value="Jonzac">Jonzac</option>
+		<option value="Jouy-le-Moutier">Jouy-le-Moutier</option>
+		<option value="Joué-lès-Tours">Joué-lès-Tours</option>
+		<option value="Juvisy-sur-Orge">Juvisy-sur-Orge</option>
+		<option value="L'Aigle">L'Aigle</option>
+		<option value="L'Haÿ-les-Roses">L'Haÿ-les-Roses</option>
+		<option value="L'Isle-Adam">L'Isle-Adam</option>
+		<option value="L'Isle-d'Abeau">L'Isle-d'Abeau</option>
+		<option value="L'Union">L'Union</option>
+		<option value="La Baule-Escoublac">La Baule-Escoublac</option>
+		<option value="La Celle-Saint-Cloud">La Celle-Saint-Cloud</option>
+		<option value="La Chapelle-Saint-Mesmin">La Chapelle-Saint-Mesmin</option>
+		<option value="La Chapelle-sur-Erdre">La Chapelle-sur-Erdre</option>
+		<option value="La Châtre">La Châtre</option>
+		<option value="La Ciotat">La Ciotat</option>
+		<option value="La Courneuve">La Courneuve</option>
+		<option value="La Ferté-Bernard">La Ferté-Bernard</option>
+		<option value="La Flèche">La Flèche</option>
+		<option value="La Garenne-Colombes">La Garenne-Colombes</option>
+		<option value="La Grande-Motte">La Grande-Motte</option>
+		<option value="La Madeleine">La Madeleine</option>
+		<option value="La Motte-Servolex">La Motte-Servolex</option>
+		<option value="La Ravoire">La Ravoire</option>
+		<option value="La Riche">La Riche</option>
+		<option value="La Roche-sur-Foron">La Roche-sur-Foron</option>
+		<option value="La Roche-sur-Yon">La Roche-sur-Yon</option>
+		<option value="La Seyne-sur-Mer">La Seyne-sur-Mer</option>
+		<option value="La Teste-de-Buch">La Teste-de-Buch</option>
+		<option value="Lagny-sur-Marne">Lagny-sur-Marne</option>
+		<option value="Lambersart">Lambersart</option>
+		<option value="Landerneau">Landerneau</option>
+		<option value="Landivisiau">Landivisiau</option>
+		<option value="Lanester">Lanester</option>
+		<option value="Langon">Langon</option>
+		<option value="Lannion">Lannion</option>
+		<option value="Laon">Laon</option>
+		<option value="Laval">Laval</option>
+		<option value="Laxou">Laxou</option>
+		<option value="Le Blanc">Le Blanc</option>
+		<option value="Le Blanc-Mesnil">Le Blanc-Mesnil</option>
+		<option value="Le Bourget">Le Bourget</option>
+		<option value="Le Bouscat">Le Bouscat</option>
+		<option value="Le Grau-du-Roi">Le Grau-du-Roi</option>
+		<option value="Le Kremlin-Bicêtre">Le Kremlin-Bicêtre</option>
+		<option value="Le Pecq">Le Pecq</option>
+		<option value="Le Perreux-sur-Marne">Le Perreux-sur-Marne</option>
+		<option value="Le Petit-Quevilly">Le Petit-Quevilly</option>
+		<option value="Le Plessis-Robinson">Le Plessis-Robinson</option>
+		<option value="Le Plessis-Trévise">Le Plessis-Trévise</option>
+		<option value="Le Pont-de-Claix">Le Pont-de-Claix</option>
+		<option value="Le Pré-Saint-Gervais">Le Pré-Saint-Gervais</option>
+		<option value="Le Puy-en-Velay">Le Puy-en-Velay</option>
+		<option value="Le Relecq-Kerhuon">Le Relecq-Kerhuon</option>
+		<option value="Le Taillan-Médoc">Le Taillan-Médoc</option>
+		<option value="Le Vésinet">Le Vésinet</option>
+		<option value="Les Clayes-sous-Bois">Les Clayes-sous-Bois</option>
+		<option value="Les Herbiers">Les Herbiers</option>
+		<option value="Les Lilas">Les Lilas</option>
+		<option value="Les Ponts-de-Cé">Les Ponts-de-Cé</option>
+		<option value="Les Sables-d'Olonne">Les Sables-d'Olonne</option>
+		<option value="Les Ulis">Les Ulis</option>
+		<option value="Levallois-Perret">Levallois-Perret</option>
+		<option value="Libourne">Libourne</option>
+		<option value="Limoux">Limoux</option>
+		<option value="Lisieux">Lisieux</option>
+		<option value="Livry-Gargan">Livry-Gargan</option>
+		<option value="Lodève">Lodève</option>
+		<option value="Lognes">Lognes</option>
+		<option value="Longuyon">Longuyon</option>
+		<option value="Longwy">Longwy</option>
+		<option value="Lons">Lons</option>
+		<option value="Loos">Loos</option>
+		<option value="Lorient">Lorient</option>
+		<option value="Lormont">Lormont</option>
+		<option value="Loudéac">Loudéac</option>
+		<option value="Louvres">Louvres</option>
+		<option value="Lunel">Lunel</option>
+		<option value="Lunéville">Lunéville</option>
+		<option value="Lure">Lure</option>
+		<option value="Luxeuil-les-Bains">Luxeuil-les-Bains</option>
+		<option value="Luçon">Luçon</option>
+		<option value="Magny-les-Hameaux">Magny-les-Hameaux</option>
+		<option value="Mainvilliers">Mainvilliers</option>
+		<option value="Maisons-Alfort">Maisons-Alfort</option>
+		<option value="Maisons-Laffitte">Maisons-Laffitte</option>
+		<option value="Maizières-lès-Metz">Maizières-lès-Metz</option>
+		<option value="Malakoff">Malakoff</option>
+		<option value="Manosque">Manosque</option>
+		<option value="Mantes-la-Ville">Mantes-la-Ville</option>
+		<option value="Marmande">Marmande</option>
+		<option value="Martignas-sur-Jalle">Martignas-sur-Jalle</option>
+		<option value="Massy">Massy</option>
+		<option value="Mauguio">Mauguio</option>
+		<option value="Mauléon-Licharre">Mauléon-Licharre</option>
+		<option value="Maurepas">Maurepas</option>
+		<option value="Mayenne">Mayenne</option>
+		<option value="Melun">Melun</option>
+		<option value="Mennecy">Mennecy</option>
+		<option value="Menton">Menton</option>
+		<option value="Meudon">Meudon</option>
+		<option value="Meylan">Meylan</option>
+		<option value="Meyzieu">Meyzieu</option>
+		<option value="Millau">Millau</option>
+		<option value="Mimizan">Mimizan</option>
+		<option value="Mions">Mions</option>
+		<option value="Mirecourt">Mirecourt</option>
+		<option value="Miribel">Miribel</option>
+		<option value="Mitry-Mory">Mitry-Mory</option>
+		<option value="Moissac">Moissac</option>
+		<option value="Molsheim">Molsheim</option>
+		<option value="Mondeville">Mondeville</option>
+		<option value="Mont-Saint-Aignan">Mont-Saint-Aignan</option>
+		<option value="Mont-de-Marsan">Mont-de-Marsan</option>
+		<option value="Montauban">Montauban</option>
+		<option value="Montbard">Montbard</option>
+		<option value="Montbrison">Montbrison</option>
+		<option value="Montbéliard">Montbéliard</option>
+		<option value="Montceau-les-Mines">Montceau-les-Mines</option>
+		<option value="Montgeron">Montgeron</option>
+		<option value="Montigny-le-Bretonneux">Montigny-le-Bretonneux</option>
+		<option value="Montigny-lès-Cormeilles">Montigny-lès-Cormeilles</option>
+		<option value="Montigny-lès-Metz">Montigny-lès-Metz</option>
+		<option value="Montlouis-sur-Loire">Montlouis-sur-Loire</option>
+		<option value="Montmorency">Montmorency</option>
+		<option value="Montrouge">Montrouge</option>
+		<option value="Montélimar">Montélimar</option>
+		<option value="Morangis">Morangis</option>
+		<option value="Moret-Loing-et-Orvanne">Moret-Loing-et-Orvanne</option>
+		<option value="Morlaix">Morlaix</option>
+		<option value="Morsang-sur-Orge">Morsang-sur-Orge</option>
+		<option value="Mortagne-au-Perche">Mortagne-au-Perche</option>
+		<option value="Morteau">Morteau</option>
+		<option value="Moulins">Moulins</option>
+		<option value="Munster">Munster</option>
+		<option value="Muret">Muret</option>
+		<option value="Mâcon">Mâcon</option>
+		<option value="Mèze">Mèze</option>
+		<option value="Mérignac">Mérignac</option>
+		<option value="Nanterre">Nanterre</option>
+		<option value="Narbonne">Narbonne</option>
+		<option value="Neuilly-sur-Marne">Neuilly-sur-Marne</option>
+		<option value="Neuilly-sur-Seine">Neuilly-sur-Seine</option>
+		<option value="Nevers">Nevers</option>
+		<option value="Niort">Niort</option>
+		<option value="Nogent-le-Rotrou">Nogent-le-Rotrou</option>
+		<option value="Nogent-sur-Marne">Nogent-sur-Marne</option>
+		<option value="Nogent-sur-Oise">Nogent-sur-Oise</option>
+		<option value="Noisiel">Noisiel</option>
+		<option value="Noisy-le-Grand">Noisy-le-Grand</option>
+		<option value="Noisy-le-Sec">Noisy-le-Sec</option>
+		<option value="Obernai">Obernai</option>
+		<option value="Olivet">Olivet</option>
+		<option value="Oloron-Sainte-Marie">Oloron-Sainte-Marie</option>
+		<option value="Orange">Orange</option>
+		<option value="Orsay">Orsay</option>
+		<option value="Orvault">Orvault</option>
+		<option value="Osny">Osny</option>
+		<option value="Ostwald">Ostwald</option>
+		<option value="Ouistreham">Ouistreham</option>
+		<option value="Oullins">Oullins</option>
+		<option value="Oyonnax">Oyonnax</option>
+		<option value="Ozoir-la-Ferrière">Ozoir-la-Ferrière</option>
+		<option value="Pacé">Pacé</option>
+		<option value="Palaiseau">Palaiseau</option>
+		<option value="Pamiers">Pamiers</option>
+		<option value="Panazol">Panazol</option>
+		<option value="Pantin">Pantin</option>
+		<option value="Paray-le-Monial">Paray-le-Monial</option>
+		<option value="Parempuyre">Parempuyre</option>
+		<option value="Parthenay">Parthenay</option>
+		<option value="Passy">Passy</option>
+		<option value="Pau">Pau</option>
+		<option value="Persan">Persan</option>
+		<option value="Pertuis">Pertuis</option>
+		<option value="Pessac">Pessac</option>
+		<option value="Pierrefitte-sur-Seine">Pierrefitte-sur-Seine</option>
+		<option value="Pierrelatte">Pierrelatte</option>
+		<option value="Plaisance-du-Touch">Plaisance-du-Touch</option>
+		<option value="Plaisir">Plaisir</option>
+		<option value="Ploufragan">Ploufragan</option>
+		<option value="Plougastel-Daoulas">Plougastel-Daoulas</option>
+		<option value="Plérin">Plérin</option>
+		<option value="Plœmeur">Plœmeur</option>
+		<option value="Poissy">Poissy</option>
+		<option value="Poligny">Poligny</option>
+		<option value="Pont-Audemer">Pont-Audemer</option>
+		<option value="Pont-Sainte-Maxence">Pont-Sainte-Maxence</option>
+		<option value="Pont-du-Château">Pont-du-Château</option>
+		<option value="Pont-l'Évêque">Pont-l'Évêque</option>
+		<option value="Pont-à-Mousson">Pont-à-Mousson</option>
+		<option value="Pontarlier">Pontarlier</option>
+		<option value="Pontault-Combault">Pontault-Combault</option>
+		<option value="Pontivy">Pontivy</option>
+		<option value="Pontoise">Pontoise</option>
+		<option value="Pornic">Pornic</option>
+		<option value="Port-de-Bouc">Port-de-Bouc</option>
+		<option value="Porto-Vecchio">Porto-Vecchio</option>
+		<option value="Provins">Provins</option>
+		<option value="Puteaux">Puteaux</option>
+		<option value="Quimper">Quimper</option>
+		<option value="Quimperlé">Quimperlé</option>
+		<option value="Rambouillet">Rambouillet</option>
+		<option value="Ramonville-Saint-Agne">Ramonville-Saint-Agne</option>
+		<option value="Redon">Redon</option>
+		<option value="Remiremont">Remiremont</option>
+		<option value="Rezé">Rezé</option>
+		<option value="Riedisheim">Riedisheim</option>
+		<option value="Rillieux-la-Pape">Rillieux-la-Pape</option>
+		<option value="Riom">Riom</option>
+		<option value="Riorges">Riorges</option>
+		<option value="Ris-Orangis">Ris-Orangis</option>
+		<option value="Rive-de-Gier">Rive-de-Gier</option>
+		<option value="Rixheim">Rixheim</option>
+		<option value="Roanne">Roanne</option>
+		<option value="Rochefort">Rochefort</option>
+		<option value="Rodez">Rodez</option>
+		<option value="Romilly-sur-Seine">Romilly-sur-Seine</option>
+		<option value="Romorantin-Lanthenay">Romorantin-Lanthenay</option>
+		<option value="Roquebrune-sur-Argens">Roquebrune-sur-Argens</option>
+		<option value="Royan">Royan</option>
+		<option value="Rueil-Malmaison">Rueil-Malmaison</option>
+		<option value="Ruffec">Ruffec</option>
+		<option value="Rumilly">Rumilly</option>
+		<option value="Saint-Amand-Montrond">Saint-Amand-Montrond</option>
+		<option value="Saint-André-les-Vergers">Saint-André-les-Vergers</option>
+		<option value="Saint-André-lez-Lille">Saint-André-lez-Lille</option>
+		<option value="Saint-Avertin">Saint-Avertin</option>
+		<option value="Saint-Avold">Saint-Avold</option>
+		<option value="Saint-Avé">Saint-Avé</option>
+		<option value="Saint-Barthélemy-d'Anjou">Saint-Barthélemy-d'Anjou</option>
+		<option value="Saint-Brice-sous-Forêt">Saint-Brice-sous-Forêt</option>
+		<option value="Saint-Brieuc">Saint-Brieuc</option>
+		<option value="Saint-Chamond">Saint-Chamond</option>
+		<option value="Saint-Claude">Saint-Claude</option>
+		<option value="Saint-Cloud">Saint-Cloud</option>
+		<option value="Saint-Cyr-l'École">Saint-Cyr-l'École</option>
+		<option value="Saint-Cyr-sur-Loire">Saint-Cyr-sur-Loire</option>
+		<option value="Saint-Cyr-sur-Mer">Saint-Cyr-sur-Mer</option>
+		<option value="Saint-Dizier">Saint-Dizier</option>
+		<option value="Saint-Dié-des-Vosges">Saint-Dié-des-Vosges</option>
+		<option value="Saint-Estève">Saint-Estève</option>
+		<option value="Saint-Fons">Saint-Fons</option>
+		<option value="Saint-Genis-Laval">Saint-Genis-Laval</option>
+		<option value="Saint-Genis-Pouilly">Saint-Genis-Pouilly</option>
+		<option value="Saint-Gilles">Saint-Gilles</option>
+		<option value="Saint-Girons">Saint-Girons</option>
+		<option value="Saint-Gratien">Saint-Gratien</option>
+		<option value="Saint-Grégoire">Saint-Grégoire</option>
+		<option value="Saint-Gély-du-Fesc">Saint-Gély-du-Fesc</option>
+		<option value="Saint-Herblain">Saint-Herblain</option>
+		<option value="Saint-Hilaire-de-Riez">Saint-Hilaire-de-Riez</option>
+		<option value="Saint-Jacques-de-la-Lande">Saint-Jacques-de-la-Lande</option>
+		<option value="Saint-Jean-Pied-de-Port">Saint-Jean-Pied-de-Port</option>
+		<option value="Saint-Jean-d'Angély">Saint-Jean-d'Angély</option>
+		<option value="Saint-Jean-de-Luz">Saint-Jean-de-Luz</option>
+		<option value="Saint-Jean-de-Maurienne">Saint-Jean-de-Maurienne</option>
+		<option value="Saint-Jean-de-Védas">Saint-Jean-de-Védas</option>
+		<option value="Saint-Junien">Saint-Junien</option>
+		<option value="Saint-Just-Saint-Rambert">Saint-Just-Saint-Rambert</option>
+		<option value="Saint-Leu-la-Forêt">Saint-Leu-la-Forêt</option>
+		<option value="Saint-Louis">Saint-Louis</option>
+		<option value="Saint-Malo">Saint-Malo</option>
+		<option value="Saint-Mandé">Saint-Mandé</option>
+		<option value="Saint-Martin-d'Hères">Saint-Martin-d'Hères</option>
+		<option value="Saint-Maur-des-Fossés">Saint-Maur-des-Fossés</option>
+		<option value="Saint-Maurice">Saint-Maurice</option>
+		<option value="Saint-Maximin-la-Sainte-Baume">Saint-Maximin-la-Sainte-Baume</option>
+		<option value="Saint-Michel-sur-Orge">Saint-Michel-sur-Orge</option>
+		<option value="Saint-Médard-en-Jalles">Saint-Médard-en-Jalles</option>
+		<option value="Saint-Nazaire">Saint-Nazaire</option>
+		<option value="Saint-Omer">Saint-Omer</option>
+		<option value="Saint-Orens-de-Gameville">Saint-Orens-de-Gameville</option>
+		<option value="Saint-Ouen-sur-Seine">Saint-Ouen-sur-Seine</option>
+		<option value="Saint-Paul-lès-Dax">Saint-Paul-lès-Dax</option>
+		<option value="Saint-Pierre-des-Corps">Saint-Pierre-des-Corps</option>
+		<option value="Saint-Pierre-du-Perray">Saint-Pierre-du-Perray</option>
+		<option value="Saint-Priest">Saint-Priest</option>
+		<option value="Saint-Quentin">Saint-Quentin</option>
+		<option value="Saint-Raphaël">Saint-Raphaël</option>
+		<option value="Saint-Sébastien-sur-Loire">Saint-Sébastien-sur-Loire</option>
+		<option value="Saint-Étienne-de-Montluc">Saint-Étienne-de-Montluc</option>
+		<option value="Sainte-Foy-lès-Lyon">Sainte-Foy-lès-Lyon</option>
+		<option value="Sainte-Geneviève-des-Bois">Sainte-Geneviève-des-Bois</option>
+		<option value="Sainte-Luce-sur-Loire">Sainte-Luce-sur-Loire</option>
+		<option value="Sainte-Maxime">Sainte-Maxime</option>
+		<option value="Saintes">Saintes</option>
+		<option value="Sallanches">Sallanches</option>
+		<option value="Sannois">Sannois</option>
+		<option value="Saran">Saran</option>
+		<option value="Sarrebourg">Sarrebourg</option>
+		<option value="Sarreguemines">Sarreguemines</option>
+		<option value="Sartrouville">Sartrouville</option>
+		<option value="Sassenage">Sassenage</option>
+		<option value="Saumur">Saumur</option>
+		<option value="Sceaux">Sceaux</option>
+		<option value="Schiltigheim">Schiltigheim</option>
+		<option value="Seclin">Seclin</option>
+		<option value="Sedan">Sedan</option>
+		<option value="Sens">Sens</option>
+		<option value="Septèmes-les-Vallons">Septèmes-les-Vallons</option>
+		<option value="Serris">Serris</option>
+		<option value="Seyssinet-Pariset">Seyssinet-Pariset</option>
+		<option value="Sisteron">Sisteron</option>
+		<option value="Soisy-sous-Montmorency">Soisy-sous-Montmorency</option>
+		<option value="Sorgues">Sorgues</option>
+		<option value="Sucy-en-Brie">Sucy-en-Brie</option>
+		<option value="Suresnes">Suresnes</option>
+		<option value="Sète">Sète</option>
+		<option value="Sèvres">Sèvres</option>
+		<option value="Sélestat">Sélestat</option>
+		<option value="Talant">Talant</option>
+		<option value="Talence">Talence</option>
+		<option value="Tarare">Tarare</option>
+		<option value="Tarascon">Tarascon</option>
+		<option value="Tarbes">Tarbes</option>
+		<option value="Tarnos">Tarnos</option>
+		<option value="Tassin-la-Demi-Lune">Tassin-la-Demi-Lune</option>
+		<option value="Taverny">Taverny</option>
+		<option value="Terville">Terville</option>
+		<option value="Thann">Thann</option>
+		<option value="Thiais">Thiais</option>
+		<option value="Thiers">Thiers</option>
+		<option value="Thonon-les-Bains">Thonon-les-Bains</option>
+		<option value="Thouars">Thouars</option>
+		<option value="Thouaré-sur-Loire">Thouaré-sur-Loire</option>
+		<option value="Tonnerre">Tonnerre</option>
+		<option value="Torcy">Torcy</option>
+		<option value="Toul">Toul</option>
+		<option value="Tournefeuille">Tournefeuille</option>
+		<option value="Tournon-sur-Rhône">Tournon-sur-Rhône</option>
+		<option value="Tournus">Tournus</option>
+		<option value="Trouville-sur-Mer">Trouville-sur-Mer</option>
+		<option value="Trélazé">Trélazé</option>
+		<option value="Trévoux">Trévoux</option>
+		<option value="Tulle">Tulle</option>
+		<option value="Uckange">Uckange</option>
+		<option value="Ugine">Ugine</option>
+		<option value="Ussel">Ussel</option>
+		<option value="Vaison-la-Romaine">Vaison-la-Romaine</option>
+		<option value="Valbonne">Valbonne</option>
+		<option value="Valentigney">Valentigney</option>
+		<option value="Valognes">Valognes</option>
+		<option value="Valréas">Valréas</option>
+		<option value="Valserhône">Valserhône</option>
+		<option value="Vandœuvre-lès-Nancy">Vandœuvre-lès-Nancy</option>
+		<option value="Vannes">Vannes</option>
+		<option value="Vanves">Vanves</option>
+		<option value="Vaulx-en-Velin">Vaulx-en-Velin</option>
+		<option value="Vauréal">Vauréal</option>
+		<option value="Vauvert">Vauvert</option>
+		<option value="Vence">Vence</option>
+		<option value="Verdun">Verdun</option>
+		<option value="Vernon">Vernon</option>
+		<option value="Verrières-le-Buisson">Verrières-le-Buisson</option>
+		<option value="Versailles">Versailles</option>
+		<option value="Vertou">Vertou</option>
+		<option value="Vichy">Vichy</option>
+		<option value="Vienne">Vienne</option>
+		<option value="Villars-les-Dombes">Villars-les-Dombes</option>
+		<option value="Ville-d'Avray">Ville-d'Avray</option>
+		<option value="Villefontaine">Villefontaine</option>
+		<option value="Villefranche-de-Rouergue">Villefranche-de-Rouergue</option>
+		<option value="Villefranche-sur-Saône">Villefranche-sur-Saône</option>
+		<option value="Villejuif">Villejuif</option>
+		<option value="Villenave-d'Ornon">Villenave-d'Ornon</option>
+		<option value="Villeneuve-Saint-Georges">Villeneuve-Saint-Georges</option>
+		<option value="Villeneuve-Tolosane">Villeneuve-Tolosane</option>
+		<option value="Villeneuve-lès-Avignon">Villeneuve-lès-Avignon</option>
+		<option value="Villeneuve-lès-Maguelone">Villeneuve-lès-Maguelone</option>
+		<option value="Villeparisis">Villeparisis</option>
+		<option value="Villepreux">Villepreux</option>
+		<option value="Villers-lès-Nancy">Villers-lès-Nancy</option>
+		<option value="Villerupt">Villerupt</option>
+		<option value="Villiers-sur-Marne">Villiers-sur-Marne</option>
+		<option value="Vincennes">Vincennes</option>
+		<option value="Vire">Vire</option>
+		<option value="Viroflay">Viroflay</option>
+		<option value="Viry-Châtillon">Viry-Châtillon</option>
+		<option value="Vitry-sur-Seine">Vitry-sur-Seine</option>
+		<option value="Vitré">Vitré</option>
+		<option value="Vittel">Vittel</option>
+		<option value="Voiron">Voiron</option>
+		<option value="Voisins-le-Bretonneux">Voisins-le-Bretonneux</option>
+		<option value="Vélizy-Villacoublay">Vélizy-Villacoublay</option>
+		<option value="Vénissieux">Vénissieux</option>
+		<option value="Wasquehal">Wasquehal</option>
+		<option value="Wissembourg">Wissembourg</option>
+		<option value="Wittenheim">Wittenheim</option>
+		<option value="Woippy">Woippy</option>
+		<option value="Yssingeaux">Yssingeaux</option>
+		<option value="Yvetot">Yvetot</option>
+		<option value="Yzeure">Yzeure</option>
+		<option value="Échirolles">Échirolles</option>
+		<option value="Écully">Écully</option>
+		<option value="Épernay">Épernay</option>
+		<option value="Épinal">Épinal</option>
+		<option value="Épinay-sur-Orge">Épinay-sur-Orge</option>
+		<option value="Éragny">Éragny</option>
+		<option value="Étampes">Étampes</option>
+		<option value="Étaples">Étaples</option>
+		<option value="Évreux">Évreux</option>
+		<option value="Évry">Évry</option>
+		<option value="">Other</option> 
+
+	  </select>
+            </div>
+        </div>
+
+	<p align="center">
+  		<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Apply</button>
+  	</p>
+  
+  </form>
+<!---------------------------------------------------------------------------------------->
+ 
+
+<!--------------------------------------------------------------------------------------------->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+<!--------------------------------------------------------------------------------------------->
+
+</body>
+</html>
