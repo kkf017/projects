@@ -1,1 +1,2 @@
-# projects
+# Projects
+Examples of various projects.
