@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/w3.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Prata", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+
+
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    	<a href="/" class="w3-bar-item w3-button"><b>IMGMagic</b></a>
+    <div class="w3-right w3-hide-small">
+      <!--<a href="/login" class="w3-bar-item w3-button">Login</a>-->
+    </div>
+  </div>
+</div>
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Cookie</b></h1>
+  <p>Perform <span class="w3-tag">FT filtering</span> on your image.</p>
+</header>
+
+
+<form action="/Cookie/img" enctype="multipart/form-data" method="POST">
+<div class="w3-row w3-half">
+   <div class="w3-padding">
+         <input class="w3-padding-large w3-white w3-border" name="ImgCookie" type="file"/>
+   </div>
+   <br>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <button class="w3-button w3-padding-large w3-white w3-border " name="ImgCookie" type="submit">Apply »</button>
+</div>
+
+
+<div class="w3-col l6">
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Let's play !</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+    
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="donut" value="donut" />
+        <img src="../static/img/img7/img7-1.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Donut</span><br>
+        <span>Apply Ideal low pass filter.</span><br>
+        <label for="donut" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="donut" name="donut" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="crunchy" value="crunchy" />
+        <img src="../static/img/img7/img7-2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Crunchy</span><br>
+        <span>Apply Butterworth low pass filter.</span><br>
+         <label for="crunchy1" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="crunchy1" name="crunchy1" style="width: 65px; height: 25px;" /><br>
+  	 <label for="crunchy2" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="crunchy2" name="crunchy2" style="width: 65px; height: 25px;" /><br>
+      </li>
+
+
+	<li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="choconuts" value="choconuts" />
+        <img src="../static/img/img7/img7-3.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Choconuts</span><br>
+        <span>Apply Gaussian low pass filter.</span><br>
+        <label for="choconuts" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sigma:</label>
+  	<input type="text" id="choconuts" name="choconuts" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+      
+      <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="candypop" value="candypop" />
+        <img src="../static/img/img7/img7-4.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Candy Pop</span><br>
+        <span>Apply Ideal high pass filter.</span><br>
+        <label for="candypop" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="candypop" name="candypop" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+      <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="cheesecake" value="cheesecake" />
+        <img src="../static/img/img7/img7-5.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cheesecake</span><br>
+        <span>Apply Butterworth high pass filter.</span><br>
+         <label for="cheesecake1" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="cheesecake1" name="cheesecake1" style="width: 65px; height: 25px;" /><br>
+  	 <label for="cheesecake2" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="cheesecake2" name="cheesecake2" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+      
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="sugar" value="sugar" />
+        <img src="../static/img/img7/img7-6.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Sugar</span><br>
+        <span>Apply Gaussian high pass filter.</span><br>
+        <label for="sugar" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sigma:</label>
+  	<input type="text" id="sugar" name="sugar" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="rainbow" value="rainbow" />
+        <img src="../static/img/img7/img7-7.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Rainbow</span><br>
+        <span>Apply Bandreject filter.</span><br>
+          	
+         <label for="rainbow3" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Filter:</label>
+  	<select class="w3-select" name="rainbow3" id="rainbow3" style="width: 65px; height: 35px;">
+	    <option value="ideal">Ideal</option>
+	    <option value="butterworth">Butterworth</option>
+	    <option value="gauss">Gaussian</option>
+	  </select>
+  	
+         <label for="rainbow1" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="rainbow1" name="rainbow1" style="width: 65px; height: 25px;" />
+  	 <br><label for="rainbow2" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="rainbow2" name="rainbow2" style="width: 65px; height: 25px;" />		
+  	 <label for="rainbow4" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="rainbow4" name="rainbow4" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+            
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="icecream" value="icecream" />
+        <img src="../static/img/img7/img7-8.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ice-Cream</span><br>
+        <span>Apply Bandpass filter.</span><br>
+        <label for="icecream3" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Filter:</label>
+  	<select class="w3-select" name="icecream3" id="icecream3" style="width: 65px; height: 35px;">
+	    <option value="ideal">Ideal</option>
+	    <option value="butterworth">Butterworth</option>
+	    <option value="gauss">Gaussian</option>
+	  </select>
+  	
+         <label for="icecream1" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="icecream1" name="icecream1" style="width: 65px; height: 25px;" />
+  	<br> <label for="icecream2" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="icecream2" name="icecream2" style="width: 65px; height: 25px;" />		
+  	 <label for="icecream4" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="icecream4" name="icecream4" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+      
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CookieImg" id="cone" value="cone" />
+        <img src="../static/img/img7/img7-9.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cone</span><br>
+        <span>Apply Homomorphic filter.</span><br>
+        <label for="cone1" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="cone1" name="cone1" style="width: 65px; height: 25px;" />
+  	 <label for="cone2" class="w3-margin">c:</label>
+  	<input type="text" id="cone2" name="cone2" style="width: 65px; height: 25px;" /><br>	<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+  	
+  	<input type="text" id="cone3" name="cone3" style="width: 65px; height: 25px;" />
+  	 <label for="cone4" class="">&#60;&nbsp; gamma &nbsp;&#60;</label>
+  	<input type="text" id="cone4" name="cone4" style="width: 65px; height: 25px;" /><br>
+      </li>
+    
+    </ul>
+  </div>
+  <hr>    
+</div>
+</form>
+
+
+</body>
+</html>

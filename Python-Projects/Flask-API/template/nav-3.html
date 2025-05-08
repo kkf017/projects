@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Prata", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    	<a href="/" class="w3-bar-item w3-button"><b>IMGMagic</b></a>
+    <div class="w3-right w3-hide-small">
+      <!--<a href="/login" class="w3-bar-item w3-button">Login</a>-->
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>IMGMagic</b></h1>
+  <p>Welcome to your <span class="w3-tag">image</span> tool.</p>
+</header>
+
+
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">  
+  
+   <div class="w3-quarter">
+      <img src="../static/img/img2/img2.jpeg" alt="img2" style="width:100%">
+      <h3>Fruit Juice</h3>
+      <p>Convert to greyscale, or noisy.</p><br>
+      <div class="" style="text-align: center;"> 
+         <form action="/FruitJuice/" method="post">
+         	<button class="w3-button w3-padding-large w3-white w3-border " name="Fruit Juice" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>   
+
+    <div class="w3-quarter">
+      <img src="../static/img/milk/cherry.jpeg" alt="cherry" style="width:100%">
+      <h3>Cherry</h3>
+      <p>Crop, rotate, scale or flip your image.</p><br>
+       <div class="" style="text-align: center;"> 
+           <form action="/Cherry/" method="post">
+    		<button class="w3-button w3-padding-large w3-white w3-border " name="Cherry" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>
+    
+   <div class="w3-quarter">
+      <img src="../static/img/img5/img5.jpeg" alt="img5" style="width:100%">
+      <h3>Muffin</h3>
+      <p>Perform filtering on your image.</p><br>
+        <div class="" style="text-align: center;"> 
+          <form action="/Muffin/" method="post">
+    		<button class="w3-button w3-padding-large w3-white w3-border " name="Muffin" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>
+      
+    <div class="w3-quarter">
+      <img src="../static/img/img3/img3.jpeg" alt="img3" style="width:100%">
+      <h3>Strawberry</h3>
+      <p>Perform sharpening on your image.</p><br>
+      <div class="" style="text-align: center;"> 
+         <form action="/Strawberry/" method="post">
+    		<button class="w3-button w3-padding-large w3-white w3-border " name="Strawberry" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>
+    
+  </div>
+  
+  
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="../static/img/milk/avocado.jpeg" alt="avocado" style="width:100%">
+      <h3>Avocado</h3>
+      <p>Perform histogram adjustement.</p><br>
+        <div class="" style="text-align: center;"> 
+          <form action="/Avocado/" method="post">
+    		<button class="w3-button w3-padding-large w3-white w3-border " name="Avocado" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="../static/img/img7/img7.jpeg" alt="img7" style="width:100%">
+      <h3>Cookie</h3>
+      <p>Perform FT filtering on image.</p><br>
+       <div class="" style="text-align: center;"> 
+          <form action="/Cookie/" method="post">
+    		<button class="w3-button w3-padding-large w3-white w3-border " name="Cookie" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="../static/img/milk/coffee.jpeg" alt="coffe" style="width:100%">
+      <h3>Coffee</h3>
+      <p>Other FT filtering on image.</p><br>
+        <div class="" style="text-align: center;"> 
+          <form action="/Coffee/" method="post">
+    		<button class="w3-button w3-padding-large w3-white w3-border " name="Coffee" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="../static/img/img6/img6.jpeg" alt="img6" style="width:100%">
+      <h3>Soda</h3>
+      <p>Gallery.</p><br>
+        <div class="" style="text-align: center;"> 
+          <form action="/Soda/" method="post">
+    		<button class="w3-button w3-padding-large w3-white w3-border " name="Coffee" type="submit">Let's go »</button>
+	  </form>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Pagination -->
+  <!--<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>-->
+  
+  
+
+  <!-- About Section -->
+ <!--   <hr id="about">
+ <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me, The Food Man</h3><br>
+    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr>-->
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-half">
+     <!-- <h3>FOOTER</h3>-->
+      <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"me.</a></p>-->
+     Copyright © 2024 IMGMagic. All Rights Reserved.
+    </div>
+  
+    <!--<div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="./img/img4.jpeg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="./img/img8.jpeg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>-->
+
+    <!--<div class="w3-half w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>-->
+
+    
+  </footer>
+</div>
+
+</body>
+</html>

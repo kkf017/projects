@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/w3.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Prata", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+
+
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    	<a href="/" class="w3-bar-item w3-button"><b>IMGMagic</b></a>
+    <div class="w3-right w3-hide-small">
+      <!--<a href="/login" class="w3-bar-item w3-button">Login</a>-->
+    </div>
+  </div>
+</div>
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Coffee</b></h1>
+  <p>Other <span class="w3-tag">FT filtering</span></p>
+</header>
+
+
+<form action="/Coffee/img" enctype="multipart/form-data" method="POST">
+<div class="w3-row w3-half">
+   <div class="w3-padding">
+         <input class="w3-padding-large w3-white w3-border" name="ImgCoffee" type="file"/>
+   </div>
+   <br>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <button class="w3-button w3-padding-large w3-white w3-border " name="ImgCoffee" type="submit">Apply »</button>
+</div>
+
+
+<div class="w3-col l6">
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Let's play !</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+    
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CoffeeImg" id="coffee1" value="coffee1" />
+        <img src="../static/img/coffee/coffee2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cup of coffee</span><br>
+        <span>Apply Laplacian filter.</span>
+      </li>
+    
+    	<li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CoffeeImg" id="coffee2" value="coffee2" />
+        <img src="../static/img/coffee/coffee0.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Coffee milk</span><br>
+        <span>Apply Unsharp masking.</span><br>
+        
+         <label for="coffee21" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="coffee21" name="coffee21" style="width: 65px; height: 25px;" /><br>
+  	 <label for="coffee22" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="coffee22" name="coffee22" style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+      <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CoffeeImg" id="coffee3" value="coffee3" />
+        <img src="../static/img/coffee/coffee2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ice coffee</span><br>
+        <span>Perform High frequensy Emphasis.</span><br>
+        <label for="coffee31" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D0:</label>
+  	<input type="text" id="coffee31" name="coffee31" style="width: 65px; height: 25px;" /><br>
+  	 <label for="coffee32" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="coffee32" name="coffee32" style="width: 65px; height: 25px;" />
+      </li>
+      
+    </ul>
+  </div>
+  <hr>    
+</div>
+</form>
+
+</body>
+</html>

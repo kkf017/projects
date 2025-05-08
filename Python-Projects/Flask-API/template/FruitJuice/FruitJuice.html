@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Prata", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+
+
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    	<a href="/" class="w3-bar-item w3-button"><b>IMGMagic</b></a>
+    <div class="w3-right w3-hide-small">
+      <!--<a href="/login" class="w3-bar-item w3-button">Login</a>-->
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Fruit Juice</b></h1>
+  <p>Convert to <span class="w3-tag">greyscale</span> or <span class="w3-tag">noisy</span>.</p>
+</header>
+
+<form action="/FruitJuice/img" enctype="multipart/form-data" method="POST">
+<div class="w3-row w3-half">
+   <div class="w3-padding">
+         <input class="w3-padding-large w3-white w3-border" name="ImgFruitJuice" type="file"/>
+   </div>
+   <br>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <button class="w3-button w3-padding-large w3-white w3-border " name="ImgFruitJuice" type="submit">Apply »</button>
+</div>
+
+
+<div class="w3-col l6">
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Let's play !</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+    
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="FruitJuiceImg" id="nachi" value="nachi" />
+        <img src="../static/img/img2/img2-1.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Nachi</span><br>
+        <span>Convert into greyscale.</span>
+      </li>
+     
+      
+      <li class="w3-padding-16">
+        <input type="radio" class="w3-radio" name="FruitJuiceImg" id="blueberry" value="blueberry"/>
+        <img src="../static/img/img2/img2-3.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Blueberry</span><br>
+        <span>Add Gaussian noise.</span><br>
+        <label for="blueberry1" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mean:&nbsp;</label>
+  	<input type="text" id="blueberry1"  name="blueberry1"  style="width: 65px; height: 25px;" /><br>
+  	<label for="blueberry2" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sigma: </label>
+  	<input type="text" id="blueberry2"  name="blueberry2"  style="width: 65px; height: 25px;" /><br>
+      </li>  
+      
+       <li class="w3-padding-16">
+        <img src="../static/img/img2/img2-2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <input type="radio" class="w3-radio" name="FruitJuiceImg" id="lemon" value="lemon"/>
+        <span class="w3-large">Lemon</span><br>
+        <span>Add Salt and Pepper noise.</span><br>
+        <label for="lemon" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probability: </label>
+  	<input type="text" id="lemon" name="lemon" style="width: 65px; height: 25px;" /><br>
+      </li> 
+      
+    </ul>
+  </div>
+  <hr>    
+</div>
+</form>
+
+</body>
+</html>

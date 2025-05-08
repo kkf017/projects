@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Prata", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    	<a href="/" class="w3-bar-item w3-button"><b>IMGMagic</b></a>
+    <div class="w3-right w3-hide-small">
+      <!--<a href="/login" class="w3-bar-item w3-button">Login</a>-->
+    </div>
+  </div>
+</div>
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Cherry</b></h1>
+  <p><span class="w3-tag">Crop</span>, <span class="w3-tag">rotate</span>, <span class="w3-tag">scale</span> or <span class="w3-tag">flip</span> your image.</p>
+</header>
+
+
+<form action="/Cherry/img" enctype="multipart/form-data" method="POST">
+<div class="w3-row w3-half">
+   <div class="w3-padding">
+         <input class="w3-padding-large w3-white w3-border" name="ImgCherry" type="file"/>
+   </div>
+   <br>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <button class="w3-button w3-padding-large w3-white w3-border " name="ImgCherry" type="submit">Apply »</button>
+</div>
+
+
+<div class="w3-col l6">
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Let's play !</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+    
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CherryImg" id="cherry1" value="cherry1" />
+        <img src="../static/img/cherry/cherry2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cherry soda</span><br>
+        <span>Crop your image.</span><br>
+         <label for="cherry1x" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="cherry1x"  name="cherry1x"  style="width: 65px; height: 25px;" />
+  	<label for="cherry1y" class="w3-margin">y:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  	<input type="text" id="cherry1y"  name="cherry1y"  style="width: 65px; height: 25px;" /><br>
+  	 <label for="cherry1width" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:</label>
+  	<input type="text" id="cherry1width"  name="cherry1width"  style="width: 65px; height: 25px;" />
+  	<label for="cherry1height" class="w3-margin">height: </label>
+  	<input type="text" id="cherry1height"  name="cherry1height"  style="width: 65px; height: 25px;" /><br>
+      </li>
+      
+       <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CherryImg" id="cherry2" value="cherry2" />
+        <img src="../static/img/cherry/cherry0.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cherry milk</span><br>
+        <span>Rotate your image.</span> <br>
+        <label for="cherry2angl" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angle:</label>
+  	<input type="text" id="cherry2angl" name="cherry2angl" style="width: 65px; height: 25px;" />
+      </li>
+      
+      <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CherryImg" id="cherry3" value="cherry3" />
+        <img src="../static/img/cherry/cherry2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cherry bubble tea</span><br>
+        <span>Scale your image.</span><br>
+         <label for="cherry3z" class="w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scale:</label>
+  	<input type="text" id="cherry3z" name="cherry3z" style="width: 65px; height: 25px;" />
+      </li>
+      
+      <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CherryImg" id="cherry4" value="cherry4" />
+        <img src="../static/img/cherry/cherry2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cherry milkshake</span><br>
+        <span>Flip your image.</span>
+      </li>
+     
+     <li class=" w3-padding-16">
+       	<input type="radio" class="w3-radio" name="CherryImg" id="cherry5" value="cherry5" />
+        <img src="../static/img/cherry/cherry2.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Cherry sparkling tea</span><br>
+        <span>Reverse your image.</span>
+      </li>
+      
+    </ul>
+  </div>
+  <hr>    
+</div>
+</form>
+
+</body>
+</html>

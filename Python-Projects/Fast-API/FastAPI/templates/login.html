@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>XPlode</title>
+
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Permanent Marker", sans-serif}
+		.w3-bar-block .w3-bar-item {padding:20px}
+	
+		/*body{
+	           background-image: url('../static/img/fun7.jpeg');
+		   background-repeat: no-repeat;
+		   background-attachment: fixed;
+		   background-size: cover; /*100% 100%;
+		} */
+	</style>
+</head>
+<body style="background-color:black">
+
+	<!-- Navbar -->
+	<div class="w3-top">
+	  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+	    	<a href="/" class="w3-bar-item w3-button"><b>XPlode</b></a>
+	    	<a href="/login" class="w3-bar-item w3-button w3-hide-small w3-right w3-text-black"><i class=""></i>Login</b></a>
+	  </div>
+	</div>
+	
+
+	<!-- Body content -->
+		<header class="w3-display-container w3-content w3-center">
+		  <img class="w3-image" src="../static/img/fun1-2.jpeg" alt="The Hotel" style="min-width:1200px; width:1065; height:1200" >
+		  
+		  <div class="w3-display-bottommiddle w3-padding w3-col l6 m8">
+		  
+		    <div class="w3-container w3-black">
+		      <h2><i class="w3-margin-right"></i>Login</h2>
+		    </div>
+		    
+		    <div class="w3-container w3-black w3-padding-16">
+		      <form action="/action_page.php" target="_blank">
+			
+			<div class="w3-row-padding" style="margin:0 -16px;">
+			  <div class="w3-margin-bottom">
+			    <label><i class="w3-green"></i></label>
+			    <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"><p></p>
+			  </div>
+			  
+			  <div class="">
+			    <label><i class="w3-purple"></i></label>
+			    <input class="w3-input w3-border" type="password" placeholder="Password" required name="password" id="password"><p></p>
+			  </div>
+			</div>
+			
+		       
+			 <input type="checkbox" onclick="SeeIt()">Show Password <p></p>
+		
+			<p class="w3-center">
+			<button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search"></i>Login</button>
+			</p>
+		      </form>
+		      
+		       <form action="/" enctype="multipart/form-data" method="post">
+		   <button class="astext w3-dark w3-text-purple w3-left"><u>Create your account !</u></button>
+	     </form>
+	     
+	     
+	     <form action="/" enctype="multipart/form-data" method="post">
+		   <button class="astext w3-dark w3-text-green w3-right"><u>Forget your password</u></button>
+	     </form>
+		      
+		    </div>
+		  </div>
+		</header>
+
+		  <!-- Footer -->
+		  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+		 	<p class="w3-text-white">Powered by <a href="https://github.com/kkf017" target="_blank">@myself</a></p>
+		   </footer>
+		  
+	</div>
+
+</body>
+
+	<script>
+		function SeeIt() {
+		  var x = document.getElementById("password");
+		  var y = document.getElementById("password-check");
+		  if (x.type === "password"){
+		    x.type = "text";
+		  } else {
+		    x.type = "password";
+		  }
+		  
+		  if (y.type === "password"){
+		    y.type = "text";
+		  } else {
+		    y.type = "password";
+		  }
+		}
+	</script>
+</html>

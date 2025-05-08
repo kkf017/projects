@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>XPlode</title>
+
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Permanent Marker", sans-serif}
+		.w3-bar-block .w3-bar-item {padding:20px}
+		
+		
+		/*body,h1,h2,h3,h4,h5,h6 {font-family: "Wittgenstein", sans-serif}
+		.w3-bar,h1,button {font-family: "Merienda", sans-serif}
+		.fa-anchor,.fa-coffee {font-size:200px}*/
+	
+		body{
+	           background-image: url('../static/img/fun7.jpeg');
+		   background-repeat: no-repeat;
+		   background-attachment: fixed;
+		   background-size: cover; /*100% 100%;
+		} 	
+	</style>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<div class="w3-top">
+	  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+	    	<a href="/" class="w3-bar-item w3-button"><b>XPlode</b></a>
+	    	<a href="/login" class="w3-bar-item w3-button w3-hide-small w3-right w3-text-black"><i class=""></i>Login</b></a>
+	  </div>
+	</div>
+	
+
+	<!-- Body content -->
+	<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+		<header class="w3-container w3-center w3-padding-32"> 
+		  <h1 class="w3-text-purple"><b>{{request.value.title}}</b></h1>
+		  <h3 class="w3-text-white">({{request.value.date}})</h3>
+		</header>
+
+		<!-- Start Content -->
+		<div class="w3-row w3-padding-64" id="about">
+		    <div class="w3-col m6 w3-padding-large w3-hide-small">
+		     <img src="{{request.value.url}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting"> <!-- width="600" height="750">-->
+		     
+		    </div>
+
+		    <div class="w3-col m6 w3-padding-large">
+		      <h1 class="w3-center w3-text-green">About it !</h1><br>
+		      <p class="w3-large w3-text-white">{{request.value.explanation}}</p>
+		      <p class="w3-large w3-text-grey w3-hide-medium w3-text-white">Copyright © {{request.value.copyright}}. All Rights Reserved. </p>
+		      
+		       <p class="w3-text-blue">Reference <a href={{request.value.url}} target="_blank">{{request.value.url}}</a>.</p>
+		    </div>
+		  </div>
+		  <!-- End Content -->
+  
+  
+		  <!-- Footer -->
+		  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+		 	<p class="w3-text-white">Powered by <a href="https://github.com/kkf017" target="_blank">@myself</a></p>
+		   </footer>
+		  
+	</div>
+
+</body>
+</html>

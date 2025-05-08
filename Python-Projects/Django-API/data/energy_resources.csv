@@ -1,0 +1,10 @@
+name,type,capacity,location,status
+Solar Farm 1,solar,100.5,Location A,active
+Wind Farm 1,wind,200.0,Location B,active
+Hydro Plant 1,hydro,300.0,Location C,inactive
+Nuclear Plant 1,nuclear,400.0,Location D,maintenance
+Solar Farm 2,solar,150.0,Location E,active
+Wind Farm 2,wind,250.0,Location F,inactive
+Hydro Plant 2,hydro,350.0,Location G,maintenance
+Nuclear Plant 2,nuclear,450.0,Location H,active
+
